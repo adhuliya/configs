@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/codeman/mydata/iitb'
+let g:netrw_dirhist_2='/home/codeman/mydata/iitb/cs618-2015'
+let g:netrw_dirhist_3='/home/codeman/mydata/iitb/cs618-2015/project'
+let g:netrw_dirhist_4='/home/codeman/setup/gcc/gcc472/gcc472b/plugins/vanilla-constraint-gen-list'
+let g:netrw_dirhist_5='/home/codeman/setup/gcc/gcc-melt/melt-examples/ex02/meltworkdir'
