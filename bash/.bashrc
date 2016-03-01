@@ -118,9 +118,9 @@ fi
 
 
 set -o vi
-echo -e "From ~/.bashrc: PATH=$PATH"
+#echo -e "From ~/.bashrc: PATH=$PATH"
 
-export OPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export OPATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/codeman/setup/nimlang/nim-0.13.0/bin
 #export GCC520=/home/codeman/setup/gcc/gcc520/gcc-5.2.0
 export GCC520a=/home/codeman/setup/gcc/gcc520/gcc520a/install
 export GCC472b=/home/codeman/setup/gcc/gcc472/gcc472b/install
@@ -141,7 +141,7 @@ export HISTSIZE=5000
 #alias n='echo -e "\nNOTE#BEGIN\n{\n  datetime: \"`date`\",\n  label: \"`date +%d%b%Y.%H%M%S`\",\n  keywords:[],\n  note: \"\"\"\"\n\n    STARTFROMHERE\n\n  \"\"\"\"\n}\nNOTE#END" >> /home/codeman/mydata/mynotes/record48.txt; vi +/STARTFROMHERE /home/codeman/mydata/mynotes/record48.txt'
 alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> /home/codeman/mydata/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "/home/codeman/mydata/mynotes-git/record48-`uname -n`.txt"'
 alias cc='echo -e "\n\n`date`\n\n" >> /home/codeman/cc; vi + /home/codeman/cc'
-alias rn='vi + "/home/codeman/mydata/mynotes/record48-`uname -n`.txt"'
+alias rn='vi + "/home/codeman/mydata/mynotes-git/record48-`uname -n`.txt"'
 alias psg="ps aux | grep"
 alias std="sudo shutdown -h now"
 alias s=sudo

@@ -1,8 +1,15 @@
+let mapleader = " "
+let maplocalleader= "\\"
+
+""""""""""""""""""""""""""""""""
+"" General Settings
+""""""""""""""""""""""""""""""""
 "set number
 set ai
 
 "expand tab to spaces: user :retab to change
 "any previous tabs to spaces
+"use :set list to see any tabs in the file as ^I
 set ts=4
 set shiftwidth=4
 set expandtab
@@ -11,6 +18,9 @@ set sm "shows matching parenthesis/brackets/braces momentarily
 
 set relativenumber
 set number
+
+" allows incrementing a to b ... too using <c-a> and <c-x>
+set nrformats+=alpha
 
 function NumberToggle()
   if(&relativenumber)
@@ -23,65 +33,83 @@ endfunc
 
 nnoremap  :call NumberToggle()<cr>
 
-au FocusLost * :set number
-au FocusGained * :set relativenumber
-
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
-
-let a='int main() {'
-
-" START FOR vim-latex package
-" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
-
-" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" can be called correctly.
-set shellslash
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
-" OPTIONAL: This enables automatic indentation as you type.
 filetype indent on
-
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-" END   FOR vim-latex package
-
-let @a = ':!gcc %'
-let @o = 'o'
-let @c = ':cd ~:pwd:e cc'
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgray
 
-"To search for visually selected text
-"The :vnoremap command maps // in visual mode to run the commands y/<C-R>"<CR> which copies 
-"the visually selected text, then starts a search command and pastes the copied 
-"text into the search. <C-R> represents Ctrl-R and <CR> represents carriage return (Enter)kk
-vnoremap // y/<C-R>"<CR>
-" wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
-" set textwidth=90
+" wraps line at around column 79, at word boundaries.
+set textwidth=79
+""""""""""""""""""""""""""""""""
 
-" Anshuman: C specific plugin
-" #include <>
-let mapleader = "-"
-let maplocalleader= "\\"
-nmap <localleader>ci <esc>o#include <><esc>i
-nmap <localleader>cm oint main(int argc, char **argv) {<cr><cr><cr>return 0;<cr>}<esc>3ki<tab>
-vmap <localleader><localleader> I//AN <esc>
-map <f9> <esc>:make<cr>
 
-" noremap ][ ][%
-set makeprg=g++\ --std=c++11\ %
-noremap [] []%
-noremap <f12> <esc><esc>:TagbarToggle<cr>
-noremap <f9> <esc><esc>:make<cr>
-noremap <f5> <esc><esc>:!./a.out
-vnoremap y "+y
+
+""""""""""""""""""""""""""""""""
+"" Remap keys
+""""""""""""""""""""""""""""""""
+
+" takes you to normal mode when jk is typed
+:inoremap jk <esc>
+
+" disable esc key to use jk instead
+" :inoremap <esc> <nop> 
+
+" edit .vimrc file
+:nnoremap <leader>ev :split $MYVIMRC<cr>
+
+" source .vimrc file (read its settings in the current vim session)
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" To search for visually selected text
+:vnoremap <leader>/ y/<C-R>"<CR>
+
+" double quotes visually selected area
+:vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
+
+" split vertical
+:nnoremap <leader>e :vsp<cr>
+
+" split horizontal
+:nnoremap <leader>o :sp<cr>
+
+:nnoremap L $
+:nnoremap H 0
+
+" paste from clipboard
+:nnoremap <leader>v "+p
+
+" add new line
+:nnoremap <cr> o<esc>
+
+" navigate between split windows
+:nnoremap <c-h> <c-w>h
+:nnoremap <c-j> <c-w>j
+:nnoremap <c-k> <c-w>k
+:nnoremap <c-l> <c-w>l
+
+" list current buffers
+:nnoremap <leader>b <esc>:ls<cr>
+
+" copy text to system clipboard
+:vnoremap y "+y
+""""""""""""""""""""""""""""""""
+
+
+
+""""""""""""""""""""""""""""""""
+"" for cpp : TODO move to ftplugin folder
+""""""""""""""""""""""""""""""""
+:autocmd FileType c nnoremap <buffer> <localleader>i <esc>o#include <><esc>i
+:autocmd FileType c nnoremap <buffer> <localleader>is <esc>o#include <stdio.h><esc>0j
+:autocmd FileType c nnoremap <buffer> <localleader>ip <esc>oprintf("Hello, world");<esc>
+:autocmd FileType c nnoremap <buffer> <localleader>m oint main(int argc, char **argv) {<cr><cr><cr>return 0;<cr>}<esc>3ki<tab>
+:autocmd FileType c vnoremap <buffer> <localleader><localleader> I//AN <esc>
+:autocmd FileType c nnoremap <buffer> <localleader><localleader> I//AN <esc>
+:autocmd FileType c setlocal makeprg=g++\ --std=c++11\ %
+:autocmd FileType c noremap <buffer> [] []%
+:autocmd FileType c noremap <buffer> <f12> <esc><esc>:TagbarToggle<cr>
+:autocmd FileType c noremap <buffer> <f9> <esc><esc>:make<cr>
+:autocmd FileType c noremap <buffer> <f5> <esc><esc>:!./a.out
+
+""""""""""""""""""""""""""""""""
