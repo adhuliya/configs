@@ -43,6 +43,11 @@ set wrap  " although the default
 
 " wraps line at around column 79, at word boundaries.
 " set textwidth=79
+
+set hlsearch
+
+set listchars=tab:>~,nbsp:_,trail:.
+set list
 """"""""""""""""""""""""""""""""
 
 
