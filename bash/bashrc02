@@ -150,9 +150,10 @@ alias std="sudo shutdown -h now"
 alias s=sudo
 alias x="xscreensaver -nosplash &"
 alias xl="xscreensaver-command --lock &"
-alias g=grep
-alias gr="grep -R"
-alias eg=egrep
+alias g=egrep
+alias gr="egrep -R"
+alias ggr="grep -R"
+alias gg=egrep
 alias egr="egrep -R"
 alias f="find . -name"
 alias p="ipython3"
@@ -161,6 +162,9 @@ alias acs="apt-cache search"
 alias sag="sudo apt-get"
 alias sagi="sag install"
 alias c="cd"
+alias j='fasd_cd -d'
+alias cal="cal -3"
+eval "$(fasd --init auto)"
 alias ..="cd .."
 #alias g52="export PATH=$withGCC520aPATH; export LD_LIBRARY_PATH=$GCC520a/lib64"
 alias g520a="export PATH=$withGCC520aPATH; export LD_LIBRARY_PATH=$GCC520a/lib64"
@@ -189,6 +193,18 @@ function gimpl {
     gcc -fdump-tree-all -fdump-rtl-all -fdump-ipa-all -O3 -c $1 ;
     gcc -O0 $1 ;
     vi $1.004t.gimple $1 ;
+}
+
+function gitf {
+    #f for fetch, but pull for lazyness
+    git pull origin master ;
+}
+
+function gitp {
+    # p for push
+    git add --all ;
+    git commit -m '$1' ;
+    git push origin master ;
 }
 
 test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f $HOME/mydata/bash_record/$(date +"%Y-%m-%d_%H-%M-%S")_shell.log)
