@@ -197,7 +197,8 @@ function gimpl {
 
 function gitf {
     #f for fetch, but pull for lazyness
-    git pull origin master ;
+    git fetch origin master ;
+    git merge origin/master ;
 }
 
 function gitp {
