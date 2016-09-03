@@ -1,2 +1,3 @@
-# config-files
-Config files of VIM, Bash, and others
+config-files
+============
+Config files of VIM, Bash, and other programs
