@@ -83,7 +83,7 @@ function gitp {
 }
 
 function gits {
-    # p for push
+    git fetch origin master;
     git status;
 }
 #END############################
