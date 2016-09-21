@@ -86,5 +86,12 @@ function gits {
     git fetch origin master;
     git status;
 }
+
+function xsl {
+    (xscreensaver -nosplash &) || echo -e "xscreensaver already running\n"
+    xscreensaver-command --lock ;
+    #killall xscreensaver ;
+}
+
 #END############################
 
