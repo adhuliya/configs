@@ -16,8 +16,8 @@ alias f="find . -name"
 alias c="cd"
 alias ..="cd .."
 
-alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> /home/codeman/mydata/work/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "/home/codeman/mydata/work/mynotes-git/record48-`uname -n`.txt"'
-alias rn='vi + "/home/codeman/mydata/work/mynotes-git/record48-`uname -n`.txt"'
+alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> /home/codeman/mydata/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "/home/codeman/mydata/mynotes-git/record48-`uname -n`.txt"'
+alias rn='vi + "/home/codeman/mydata/mynotes-git/record48-`uname -n`.txt"'
 
 alias psg="ps aux | egrep"
 
