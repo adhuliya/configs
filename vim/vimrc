@@ -196,6 +196,12 @@ if bufwinnr(1)
   map <c-right> <c-w>>
 endif
 """"""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""
+"" Spell Check settings
+""""""""""""""""""""""""""""""""
+set spelllang=en
+:nnoremap <f7> <esc>:set spell!<cr>
+""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""
 """ Nim go to definition
