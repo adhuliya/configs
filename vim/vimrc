@@ -200,7 +200,7 @@ endif
 "" Spell Check settings
 """"""""""""""""""""""""""""""""
 set spelllang=en
-:nnoremap <f7> <esc>:set spell!<cr>
+:nnoremap <f7> <esc>:setlocal spell!<cr>
 """"""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""
