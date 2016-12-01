@@ -87,6 +87,9 @@ function gits {
     git status;
 }
 
+#############################
+## xscreensaver
+#############################
 function xsl {
     (xscreensaver -nosplash &) || echo -e "xscreensaver already running\n"
     xscreensaver-command --lock ;
