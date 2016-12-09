@@ -102,3 +102,4 @@ function b {
 
 #END############################
 
+export PATH=$PATH:/home/codeman/mydata/bin-git
