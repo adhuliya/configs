@@ -96,5 +96,9 @@ function xsl {
     #killall xscreensaver ;
 }
 
+function b {
+    $@ &> /dev/null &
+}
+
 #END############################
 
