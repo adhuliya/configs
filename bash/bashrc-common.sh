@@ -63,7 +63,7 @@ function psgk {
 function gitfm {
     # f for fetch, m for merge
     git fetch origin master ;
-    git merge origin/master ;
+    git merge -m "merged" origin/master ;
 }
 
 function gitf {
@@ -73,7 +73,7 @@ function gitf {
 
 function gitm {
     # m for merge
-    git merge origin/master ;
+    git merge -m "merged" origin/master ;
 }
 
 function gitp {
