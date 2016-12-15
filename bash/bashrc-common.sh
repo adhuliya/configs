@@ -23,6 +23,7 @@ alias rn='vi + "/home/codeman/mydata/mynotes-git/record48-nintel.txt"'
 alias psg="ps aux | egrep"
 
 alias s=sudo
+alias ss="sudo su"
 
 alias x="xscreensaver -nosplash &"
 alias xl="xscreensaver-command --lock &"
@@ -33,13 +34,12 @@ alias eg=egrep
 alias egr="egrep -R"
 
 alias py="python3"
-alias ipy="python3"
 
 alias v=vim
 
 alias acs="apt-cache search"
 alias sag="sudo apt-get"
-alias sagi="sag install"
+alias sagi="sudo apt-get install"
 
 function ev {
     evince $1 &> /dev/null & 
