@@ -49,6 +49,10 @@ alias acs="apt-cache search"
 alias sag="sudo apt-get"
 alias sagi="sudo apt-get install"
 
+function o {
+    xdg-open $1 &> /dev/null & 
+}
+
 function ev {
     evince $1 &> /dev/null & 
 }
@@ -56,6 +60,11 @@ function ev {
 function e {
     echo $@ ;
 }
+
+function b {
+    $@ &> /dev/null &
+}
+
 
 function psgk {
     kill `ps -e | grep $@ | cut -d' '  -f1` ;
@@ -103,10 +112,6 @@ function xsl {
     (xscreensaver -nosplash &) || echo -e "xscreensaver already running\n"
     xscreensaver-command --lock ;
     #killall xscreensaver ;
-}
-
-function b {
-    $@ &> /dev/null &
 }
 
 #END############################
