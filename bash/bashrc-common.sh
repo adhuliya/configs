@@ -21,8 +21,8 @@ alias ..="cd .."
 export NOTESTUB="\n\n\n------------------------------------------------\nNote Heading <a name=\"`date +%Y%m%d-%H%M%S`\"></a>\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> /home/codeman/mydata/mynotes-git/record48-nintel.txt; vi +/CommaSeparatedKeyword "/home/codeman/mydata/mynotes-git/record48-nintel.txt"'
-alias rn='vi + "/home/codeman/mydata/mynotes-git/record48-nintel.txt"'
+alias n='echo -e "$NOTESTUB" >> /home/codeman/mydata/git/mynotes-git/record48-nintel.txt; vi +/CommaSeparatedKeyword "/home/codeman/mydata/git/mynotes-git/record48-nintel.txt"'
+alias rn='vi + "/home/codeman/mydata/git/mynotes-git/record48-nintel.txt"'
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> record48-nintel.txt; vi +/CommaSeparatedKeyword "record48-nintel.txt"'
@@ -116,4 +116,4 @@ function xsl {
 
 #END############################
 
-export PATH=$PATH:/home/codeman/mydata/bin-git
+export PATH=$PATH:/home/codeman/mydata/git/bin-git
