@@ -69,6 +69,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 """"""""""""""""""""""""""""""""
 "" General Settings
 """"""""""""""""""""""""""""""""
+" set current working directory (cwd) to that of the current file
+autocmd BufEnter * silent! lcd %:p:h
+
 set relativenumber
 set number
 
@@ -195,6 +198,12 @@ if bufwinnr(1)
   map <c-left> <c-w><
   map <c-right> <c-w>>
 endif
+""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""
+"" Spell Check settings
+""""""""""""""""""""""""""""""""
+set spelllang=en
+:nnoremap <f7> <esc>:setlocal spell!<cr>
 """"""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""
