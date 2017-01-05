@@ -1,0 +1,20 @@
+# Donot hand edit!!
+# A python3 readable list of dicts, meant to be read using eval()
+[
+{ "dir":"bin-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"configs-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"mynotes-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/misc-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/meetings-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/resources-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/code/benchmarks-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/code/cs618project-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/writeups/mandar-report-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/writeups/mywriteups-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/writeups/research-notes-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"research/writeups/cs618-project-report-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"ws/gate-notes-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"ws/web-filebrowser-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"ws/web-organizer-git", "origin-url":"", "user.name":"", "user.email":""},
+{ "dir":"ws/llvm-clang-git", "origin-url":"", "user.name":"", "user.email":""},
+]
