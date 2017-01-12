@@ -133,6 +133,8 @@ set clipboard=unnamed
 " takes you to normal mode when jk or kj is typed
 :inoremap jk <esc>
 :inoremap kj <esc>
+:inoremap JK <esc>
+:inoremap KJ <esc>
 
 " disable esc key to use jk instead
 " :inoremap <esc> <nop> 
