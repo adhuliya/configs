@@ -117,3 +117,4 @@ function xsl {
 #END############################
 
 export PATH=$PATH:/home/codeman/mydata/git/bin-git
+export MYDATA=/home/codeman/mydata
