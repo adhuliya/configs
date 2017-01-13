@@ -163,6 +163,8 @@ set clipboard=unnamed
 
 :nnoremap L $
 :nnoremap H ^
+:vnoremap L $
+:vnoremap H ^
 
 " pa://github.com/adhuliya/config-files.gitte from clipboard
 :nnoremap <leader>v "+p

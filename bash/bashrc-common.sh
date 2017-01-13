@@ -21,12 +21,12 @@ alias ..="cd .."
 export NOTESTUB="\n\n\n------------------------------------------------\nNote Heading <a name=\"`date +%Y%m%d-%H%M%S`\"></a>\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> /home/codeman/mydata/git/mynotes-git/record48-nintel.txt; vi +/CommaSeparatedKeyword "/home/codeman/mydata/git/mynotes-git/record48-nintel.txt"'
-alias rn='vi + "/home/codeman/mydata/git/mynotes-git/record48-nintel.txt"'
+alias n='echo -e "$NOTESTUB" >> /home/codeman/mydata/git/mynotes-git/record48-nintel.md; vi +/CommaSeparatedKeyword "/home/codeman/mydata/git/mynotes-git/record48-nintel.md"'
+alias rn='vi + "/home/codeman/mydata/git/mynotes-git/record48-nintel.md"'
 
 # local notes
-alias nl='echo -e "$NOTESTUB" >> record48-nintel.txt; vi +/CommaSeparatedKeyword "record48-nintel.txt"'
-alias rnl='vi + "record48-nintel.txt"'
+alias nl='echo -e "$NOTESTUB" >> record48-nintel.md; vi +/CommaSeparatedKeyword "record48-nintel.md"'
+alias rnl='vi + "record48-nintel.md"'
 
 alias psg="ps aux | egrep"
 
