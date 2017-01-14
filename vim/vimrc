@@ -3,9 +3,8 @@ set nocompatible
 let mapleader = " "
 let maplocalleader= "\\"
 
-"""""""""""""""""""""""""""""""
-" for vundle vim package manager
-"""""""""""""""""""""""""""""""
+"""START---vundle vim package manager configuration
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -56,7 +55,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-"""""""""""""""""""""""""""""""
+"
+"""END-----vundle vim package manager configuration
 
 
 """""""""""""""""""""""""""""""
@@ -161,10 +161,15 @@ set clipboard=unnamed
 " split horizontal
 :nnoremap <leader>o :sp<cr>
 
+" in-buffer navigation
 :nnoremap L $
 :nnoremap H ^
 :vnoremap L $
 :vnoremap H ^
+:nnoremap <c-u> {
+:nnoremap <c-d> }
+:vnoremap <c-u> {
+:vnoremap <c-d> }
 
 " pa://github.com/adhuliya/config-files.gitte from clipboard
 :nnoremap <leader>v "+p
