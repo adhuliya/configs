@@ -116,5 +116,13 @@ function xsl {
 
 #END############################
 
+#START---CLANG/LLVM RELATED
+
+# clangel = clang emit llvm
+function clangel {
+    clang -emit-llvm -S -c $1 -o -;
+}
+#END-----CLANG/LLVM RELATED
+
 export PATH=$PATH:/home/codeman/mydata/git/bin-git
 export MYDATA=/home/codeman/mydata
