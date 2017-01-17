@@ -21,7 +21,7 @@
 {'dir': 'ws/golang/riminet-git', 'live': True, 'groups': ['all'], 'user.email': 'lazynintel@gmail.com', 'origin-url': 'git@bitbucket.org:lazynintel/riminet.git', 'user.name': 'lazy nintel'},
 {'dir': 'ws/haskell-git', 'live': True, 'groups': ['all'], 'user.email': 'lazynintel@gmail.com', 'origin-url': 'git@github.com:adhuliya/haskell-practice.git', 'user.name': 'lazy nintel'},
 {'dir': 'ws/calclang-git', 'live': True, 'groups': ['all'], 'user.email': 'dhuliya@cse.iitb.ac.in', 'origin-url': 'git@github.com:adhuliya/calclang.git', 'user.name': 'anshuman dhuliya'},
-{'dir': 'mynotes-git', 'live': True, 'groups': ['all'], 'user.email': 'lazynintel@gmail.com', 'origin-url': 'git@bitbucket.org:lazynintel/mynotes.git', 'user.name': 'Lazy Nintel'},
+{'dir': 'mynotes-git', 'live': True, 'groups': ['all', 'notes'], 'user.email': 'lazynintel@gmail.com', 'origin-url': 'git@bitbucket.org:lazynintel/mynotes.git', 'user.name': 'Lazy Nintel'},
 {'dir': 'configs-git', 'live': True, 'groups': ['all', 'core'], 'user.email': 'lazynintel@gmail.com', 'origin-url': 'git@github.com:adhuliya/configs.git', 'user.name': 'lazy nintel'},
 {'dir': 'bin-git', 'live': True, 'groups': ['all', 'core'], 'user.email': 'lazynintel@gmail.com', 'origin-url': 'git@github.com:adhuliya/bin.git', 'user.name': 'lazy nintel'},
 ]
