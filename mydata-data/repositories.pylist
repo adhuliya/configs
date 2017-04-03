@@ -19,11 +19,11 @@
 
 {'dir': 'ws/llvm-clang-git', 'live': True, 'user.name': 'lazy nintel', 'groups': ['all'], 'origin-url': 'git@bitbucket.org:lazynintel/llvm-clang.git', 'user.email': 'lazynintel@gmail.com'},
 
-{'dir': 'ws/web-filebrowser-git', 'live': True, 'user.name': 'lazy nintel', 'groups': ['all'], 'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-filebrowser.git', 'user.email': 'lazynintel@gmail.com'},
+{'dir': 'ws/web-filebrowser-git', 'live': False, 'user.name': 'lazy nintel', 'groups': ['all'], 'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-filebrowser.git', 'user.email': 'lazynintel@gmail.com'},
 
 {'dir': 'ws/web-organizer-git', 'live': True, 'user.name': 'lazy nintel', 'groups': ['all'], 'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-organizer.git', 'user.email': 'lazynintel@gmail.com'},
 
-{'dir': 'ws/formal-ppt-git', 'live': True, 'user.name': 'anshuman dhuliya', 'groups': ['all'], 'origin-url': 'git@bitbucket.org:lazynintel/formal-ppt.git', 'user.email': 'dhuliya@cse.iitb.ac.in'},
+{'dir': 'ws/formal-ppt-git', 'live': False, 'user.name': 'anshuman dhuliya', 'groups': ['all'], 'origin-url': 'git@bitbucket.org:lazynintel/formal-ppt.git', 'user.email': 'dhuliya@cse.iitb.ac.in'},
 
 {'dir': 'ws/projects/formal-ppt-git', 'live': True, 'user.name': 'lazy nintel', 'groups': ['all'], 'origin-url': 'git@bitbucket.org:lazynintel/formal-ppt.git', 'user.email': 'lazynintel@gmail.com'},
 
