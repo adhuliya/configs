@@ -11,7 +11,7 @@
 {'groups': ['all'], 'dir': 'ws/python/src/compiler-git', 'user.name': 'lazy nintel', 'origin-url': 'git@github.com:adhuliya/compiler.git', 'user.email': 'lazynintel@gmail.com', 'live': True},
 {'groups': ['all'], 'dir': 'ws/py3-db-driver-git', 'user.name': 'anshuman dhuliya', 'origin-url': 'git@github.com:adhuliya/python3-sqlite3-driver.git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': True},
 {'groups': ['all'], 'dir': 'ws/ws-misc-git/python/src/compiler-git', 'user.name': 'anshuman dhuliya', 'origin-url': 'git@github.com:adhuliya/compiler.git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': True},
-{'groups': ['all'], 'dir': 'ws/riminet-git', 'user.name': 'anshuman dhuliya', 'origin-url': 'git@bitbucket.org:lazynintel/riminet.git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': True},
+{'groups': ['all','riminet'], 'dir': 'ws/riminet-git', 'user.name': 'anshuman dhuliya', 'origin-url': 'git@bitbucket.org:lazynintel/riminet.git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': True},
 {'groups': ['all'], 'dir': 'ws/llvm-clang-git', 'user.name': 'lazy nintel', 'origin-url': 'git@bitbucket.org:lazynintel/llvm-clang.git', 'user.email': 'lazynintel@gmail.com', 'live': True},
 {'groups': ['all'], 'dir': 'ws/web-filebrowser-git', 'user.name': 'lazy nintel', 'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-filebrowser.git', 'user.email': 'lazynintel@gmail.com', 'live': True},
 {'groups': ['all'], 'dir': 'ws/web-organizer-git', 'user.name': 'lazy nintel', 'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-organizer.git', 'user.email': 'lazynintel@gmail.com', 'live': True},
