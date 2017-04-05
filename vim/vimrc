@@ -1,7 +1,7 @@
 set encoding=utf-8
 set nocompatible
 let mapleader = " "
-let maplocalleader= "\\"
+let maplocalleader= "-"
 
 """START---vundle vim package manager configuration
 
@@ -74,6 +74,7 @@ autocmd BufEnter * silent! lcd %:p:h
 
 set relativenumber
 set number
+set numberwidth=5
 
 function! NumberToggle()
   if(&relativenumber)
