@@ -1,4 +1,5 @@
 com ox t oxfordlearnersdictionaries.com
 com th t thesaurus.com
-map , gT
-map . gt
+nnoremap < gT
+nnoremap > gt
+nnoremap vv :t https://www.google.co.in/?gfe_rd=cr&ei=KgrtWK6dK5uGuwS3j7iQDg#q=define+
