@@ -3,6 +3,10 @@ set nocompatible
 let mapleader = " "
 let maplocalleader= "-"
 
+" use zm (fold more) and zr (fold less); Also zM/zR for 'all the way'
+" set foldnestmax=2
+set foldmethod=syntax
+
 """START---vundle vim package manager configuration
 
 set nocompatible              " be iMproved, required
@@ -94,7 +98,7 @@ set ai
 "expand tab to spaces: 
 "use :retab to change any previous tabs to spaces
 "use :set list to see any tabs in the file as ^I
-set ts=4
+set tabstop=4
 set shiftwidth=4
 set expandtab
 set sm "shows matching parenthesis/brackets/braces momentarily
