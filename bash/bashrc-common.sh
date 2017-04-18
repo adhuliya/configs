@@ -49,6 +49,8 @@ alias acs="apt-cache search"
 alias sag="sudo apt-get"
 alias sagi="sudo apt-get install"
 
+alias time="/usr/bin/time"
+
 function o {
     xdg-open $1 &> /dev/null & 
 }
@@ -122,6 +124,9 @@ function xsl {
 function clangel {
     clang -emit-llvm -S -c $1 -o -;
 }
+
+alias clang14="clang++ -std=c++14"
+
 #END-----CLANG/LLVM RELATED
 
 export PATH=$PATH:/home/codeman/mydata/git/bin-git
