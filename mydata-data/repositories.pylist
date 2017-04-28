@@ -1,57 +1,59 @@
 [
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/resources.git', 'dir': 'research/resources-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/resources.git', 'groups': ['all'], 'dir': 'research/resources-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/cs618-project-report.git', 'dir': 'research/writeups/cs618-project-report-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/cs618-project-report.git', 'groups': ['all'], 'dir': 'research/writeups/cs618-project-report-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/mandar-report-git.git', 'dir': 'research/writeups/mandar-report-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/mandar-report-git.git', 'groups': ['all'], 'dir': 'research/writeups/mandar-report-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/research-notes.git', 'dir': 'research/writeups/research-notes-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/research-notes.git', 'groups': ['all'], 'dir': 'research/writeups/research-notes-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/mywriteups.git', 'dir': 'research/writeups/mywriteups-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/mywriteups.git', 'groups': ['all'], 'dir': 'research/writeups/mywriteups-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/meetings.git', 'dir': 'research/meetings-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/meetings.git', 'groups': ['all'], 'dir': 'research/meetings-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/misc.git', 'dir': 'research/misc-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/misc.git', 'groups': ['all'], 'dir': 'research/misc-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/cs618project.git', 'dir': 'research/code/cs618project-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/cs618project.git', 'groups': ['all'], 'dir': 'research/code/cs618project-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/benchmarks.git', 'dir': 'research/code/benchmarks-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/benchmarks.git', 'groups': ['all'], 'dir': 'research/code/benchmarks-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/python3-sqlite3-driver.git', 'dir': 'ws/py3-db-driver-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'readonly': False, 'live': False, 'user.name': 'anshuman dhuliya', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/python3-sqlite3-driver.git', 'groups': ['all'], 'dir': 'ws/py3-db-driver-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': False, 'user.name': 'anshuman dhuliya', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/ws-misc.git', 'dir': 'ws/ws-misc-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'adhuliya', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/ws-misc.git', 'groups': ['all'], 'dir': 'ws/ws-misc-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'adhuliya', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/mycv.git', 'dir': 'ws/mycv-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'adhuliya', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/mycv.git', 'groups': ['all'], 'dir': 'ws/mycv-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'adhuliya', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-filebrowser.git', 'dir': 'ws/web-filebrowser-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-filebrowser.git', 'groups': ['all'], 'dir': 'ws/web-filebrowser-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-organizer.git', 'dir': 'ws/web-organizer-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@git.cse.iitb.ac.in:dhuliya/web-organizer.git', 'groups': ['all'], 'dir': 'ws/web-organizer-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/formal-ppt.git', 'dir': 'ws/formal-ppt-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'readonly': False, 'live': False, 'user.name': 'anshuman dhuliya', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/formal-ppt.git', 'groups': ['all'], 'dir': 'ws/formal-ppt-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': False, 'user.name': 'anshuman dhuliya', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/compiler.git', 'dir': 'ws/compiler-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/compiler.git', 'groups': ['all'], 'dir': 'ws/compiler-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/gate-notes.git', 'dir': 'ws/gate-notes-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'readonly': False, 'live': True, 'user.name': 'anshuman dhuliya', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/gate-notes.git', 'groups': ['all'], 'dir': 'ws/gate-notes-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': True, 'user.name': 'anshuman dhuliya', 'readonly': False},
 
-{'origin-url': 'git@github.com:PrinceDhaliwal/llvm_passes.git', 'dir': 'ws/llvm/llvm_passes', 'user.email': '', 'readonly': True, 'live': True, 'user.name': '', 'groups': ['all']},
+{'origin-url': 'git@github.com:PrinceDhaliwal/llvm_passes.git', 'groups': ['all'], 'dir': 'ws/llvm/llvm_passes', 'user.email': '', 'live': True, 'user.name': '', 'readonly': True},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/llvm-clang.git', 'dir': 'ws/llvm/llvm-clang-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/llvm-clang.git', 'groups': ['all'], 'dir': 'ws/llvm/llvm-clang-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/riminet.git', 'dir': 'ws/riminet-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'readonly': False, 'live': False, 'user.name': 'anshuman dhuliya', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/riminet.git', 'groups': ['all'], 'dir': 'ws/riminet-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': False, 'user.name': 'anshuman dhuliya', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/haskell-practice.git', 'dir': 'ws/haskell-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': False, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/haskell-practice.git', 'groups': ['all'], 'dir': 'ws/haskell-git', 'user.email': 'lazynintel@gmail.com', 'live': False, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/calclang.git', 'dir': 'ws/calclang-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'readonly': False, 'live': False, 'user.name': 'anshuman dhuliya', 'groups': ['all']},
+{'origin-url': 'git@github.com:adhuliya/calclang.git', 'groups': ['all'], 'dir': 'ws/calclang-git', 'user.email': 'dhuliya@cse.iitb.ac.in', 'live': False, 'user.name': 'anshuman dhuliya', 'readonly': False},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/mynotes.git', 'dir': 'mynotes-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'Lazy Nintel', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/mynotes.git', 'groups': ['all'], 'dir': 'mynotes-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'Lazy Nintel', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/configs.git', 'dir': 'configs-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all', 'core']},
+{'origin-url': 'git@github.com:adhuliya/configs.git', 'groups': ['all', 'core'], 'dir': 'configs-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@github.com:adhuliya/bin.git', 'dir': 'bin-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all', 'core']},
+{'origin-url': 'git@github.com:adhuliya/bin.git', 'groups': ['all', 'core'], 'dir': 'bin-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
-{'origin-url': 'git@github.com:PrinceDhaliwal/points-to-constraintgen.git', 'dir': 'ws/llvm/points-to-constraintgen', 'user.email': 'lazynintel@gmail.com', 'readonly': True, 'live': True, 'user.name': 'adhuliya', 'groups': ['all']},
+{'origin-url': 'git@github.com:PrinceDhaliwal/points-to-constraintgen.git', 'groups': ['all'], 'dir': 'ws/llvm/points-to-constraintgen', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'adhuliya', 'readonly': True},
 
-{'origin-url': 'git@bitbucket.org:lazynintel/gpg-llvm.git', 'dir': 'ws/gpg-llvm-git', 'user.email': 'lazynintel@gmail.com', 'readonly': False, 'live': True, 'user.name': 'lazy nintel', 'groups': ['all']},
+{'origin-url': 'git@bitbucket.org:lazynintel/gpg-llvm.git', 'groups': ['all'], 'dir': 'ws/gpg-llvm-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
+
+{'origin-url': 'git@github.com:adhuliya/adhuliya.github.io.git', 'groups': ['all'], 'dir': 'ws/adhuliya.github.io-git', 'user.email': 'lazynintel@gmail.com', 'live': True, 'user.name': 'lazy nintel', 'readonly': False},
 
 ]
 
