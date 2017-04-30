@@ -5,8 +5,8 @@ set -o vi
 # the suffix $ or # is fixed separately for a user and root
 export PS1="\n>>PROMPT(\#, \!, \t) \n\u@\h: \W "
 
-export HISTFILESIZE=50000
-export HISTSIZE=5000
+export HISTFILESIZE=-1
+export HISTSIZE=-1
 
 alias ll='ls -lF'
 alias lla='ls -alF'
