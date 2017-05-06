@@ -51,6 +51,10 @@ alias sagi="sudo apt-get install"
 
 alias time="/usr/bin/time"
 
+alias head1="head -n 1"
+alias head2="head -n 2"
+alias head3="head -n 3"
+
 function o {
     xdg-open $1 &> /dev/null & 
 }
