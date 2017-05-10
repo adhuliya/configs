@@ -1,3 +1,17 @@
+echo "$(date) bashrc-common.sh executing" >> ${MYDATA}/local/mybash.log
+
+################################
+## MOST IMPORTANT
+################################
+export PATH=${PATH}:${MYDATA}/git/bin-git
+export CDPATH=${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote
+
+# MYDATA should be set in /etc/environment file.
+# It should contain a line like given below:
+#   MYDATA=/home/codeman/mydata
+################################
+
+
 ################################
 ## Common shortcuts
 ################################
@@ -28,8 +42,6 @@ alias rn='vi + "/home/codeman/mydata/git/mynotes-git/record48-nintel.md"'
 alias nl='echo -e "$NOTESTUB" >> record48-nintel.md; vi +/CommaSeparatedKeyword "record48-nintel.md"'
 alias rnl='vi + "record48-nintel.md"'
 
-alias psg="ps aux | egrep"
-
 alias s=sudo
 alias ss="sudo su"
 
@@ -41,7 +53,12 @@ alias gr="grep -R"
 alias eg=egrep
 alias egr="egrep -R"
 
-alias py="python3"
+################
+## python
+################
+alias py="python3 -q"
+export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python-startup.py
+################
 
 alias v=vim
 
@@ -60,7 +77,7 @@ function o {
 }
 
 function ev {
-    evince $1 &> /dev/null & 
+    evince $1 &> /dev/null &
 }
 
 function e {
@@ -68,12 +85,15 @@ function e {
 }
 
 function b {
-    $@ &> /dev/null &
+    "$@" &> /dev/null &
 }
 
+function psg {
+    ps -aux | grep "$@" | grep -v "grep" | getcol 2 ;
+}
 
 function psgk {
-    kill `ps -e | grep $@ | cut -d' '  -f1` ;
+    kill $(ps -aux | grep "$@" | grep -v "grep" | getcol 2) ;
 }
 ################################
 
@@ -120,7 +140,7 @@ function xsl {
     #killall xscreensaver ;
 }
 
-#END############################
+#END#########################
 
 #START---CLANG/LLVM RELATED
 
@@ -133,5 +153,4 @@ alias clang14="clang++ -std=c++14"
 
 #END-----CLANG/LLVM RELATED
 
-export PATH=$PATH:/home/codeman/mydata/git/bin-git
-export MYDATA=/home/codeman/mydata
+
