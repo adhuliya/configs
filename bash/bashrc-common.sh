@@ -3,8 +3,9 @@ echo "$(date) bashrc-common.sh executing" >> ${MYDATA}/local/mybash.log
 ################################
 ## MOST IMPORTANT
 ################################
-export PATH=${PATH}:${MYDATA}/git/bin-git
-export CDPATH=${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote
+export PATH="${PATH}:${MYDATA}/git/bin-git"
+export CDPATH="${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
+export EDITOR="vim"
 
 # MYDATA should be set in /etc/environment file.
 # It should contain a line like given below:
