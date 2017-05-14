@@ -4,9 +4,10 @@
 
 
 [
+
 {
   'dir'         : 'bin-git',
-  'groups'      : ['all'],
+  'groups'      : ['all', 'core'],
   'live'        : True,
   'origin-url'  : 'git@github.com:adhuliya/bin.git',
   'readonly'    : False,
@@ -16,7 +17,7 @@
 
 {
   'dir'         : 'configs-git',
-  'groups'      : ['all'],
+  'groups'      : ['all', 'core'],
   'live'        : True,
   'origin-url'  : 'git@github.com:adhuliya/configs.git',
   'readonly'    : False,
@@ -26,7 +27,7 @@
 
 {
   'dir'         : 'mynotes-git',
-  'groups'      : ['all'],
+  'groups'      : ['all', 'core'],
   'live'        : True,
   'origin-url'  : 'git@bitbucket.org:lazynintel/mynotes.git',
   'readonly'    : False,
