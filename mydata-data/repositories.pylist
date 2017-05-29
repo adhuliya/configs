@@ -156,6 +156,16 @@
 },
 
 {
+  'dir'         : 'ws/cpp/cpp-practice',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://adhuliya@github.com/adhuliya/cpp-practice.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'Lazy Nintel',
+},
+
+{
   'dir'         : 'ws/formal-ppt-git',
   'groups'      : ['all'],
   'live'        : False,
@@ -173,6 +183,76 @@
   'readonly'    : False,
   'user.email'  : 'dhuliya@cse.iitb.ac.in',
   'user.name'   : 'anshuman dhuliya',
+},
+
+{
+  'dir'         : 'ws/git/git-experiment-01/ram/hello-web',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : '/home/codeman/mydata/ws/ws-git/git-experiment-01/ram/../hello-web.git/',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/git/git-experiment-01/shyam/hello-web',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : '/home/codeman/mydata/ws/ws-git/git-experiment-01/shyam/../hello-web.git/',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/git/git-merge-exp02/user1',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : '../main.git/',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/git/git-merge-exp02/user2',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : '../main.git/',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/git/hello-world',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : '../hello-world.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/git/hello-world-clone/hello-world',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : '/home/codeman/mydata/ws/ws-git/hello-world-clone/../hello-world.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/golang/riminet-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@bitbucket.org:lazynintel/riminet.git',
+  'readonly'    : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
 },
 
 {
@@ -196,6 +276,36 @@
 },
 
 {
+  'dir'         : 'ws/latex/imperfect-loops',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://github.com/adhuliya/imperfect-loops.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/latex/master-latex-doc',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://github.com/adhuliya/master-latex-doc.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/llvm-clang-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@bitbucket.org:lazynintel/llvm-clang.git',
+  'readonly'    : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
   'dir'         : 'ws/llvm/llvm-clang-git',
   'groups'      : ['all'],
   'live'        : True,
@@ -211,8 +321,8 @@
   'live'        : True,
   'origin-url'  : 'git@github.com:PrinceDhaliwal/llvm_passes.git',
   'readonly'    : True,
-  'user.email'  : '',
-  'user.name'   : '',
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
 },
 
 {
@@ -226,6 +336,16 @@
 },
 
 {
+  'dir'         : 'ws/melt/melt-examples',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://github.com/bstarynk/melt-examples.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
   'dir'         : 'ws/mycv-git',
   'groups'      : ['all'],
   'live'        : False,
@@ -236,6 +356,46 @@
 },
 
 {
+  'dir'         : 'ws/projects/formal-ppt-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@bitbucket.org:lazynintel/formal-ppt.git',
+  'readonly'    : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/projects/mysql-driver-py3',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://adhuliya@github.com/adhuliya/mysql-driver-py3.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/projects/python3-sqlite3-driver',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://adhuliya@github.com/adhuliya/python3-sqlite3-driver.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/projects/python3-webdev/bottle/notespy-web-app',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://github.com/adhuliya/notespy-web-app.git',
+  'readonly'    : True,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
   'dir'         : 'ws/py3-db-driver-git',
   'groups'      : ['all'],
   'live'        : False,
@@ -243,6 +403,16 @@
   'readonly'    : False,
   'user.email'  : 'dhuliya@cse.iitb.ac.in',
   'user.name'   : 'anshuman dhuliya',
+},
+
+{
+  'dir'         : 'ws/python/src/compiler-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:adhuliya/compiler.git',
+  'readonly'    : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
 },
 
 {
