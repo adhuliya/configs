@@ -1,6 +1,18 @@
-# format: List of Python 3 Dicts.
+# Format: List of Python 3 Dicts.
 # Use only string keys, as keys are sorted for printing
 # Note: The file contents are read using builtins.eval()
+
+# STATS
+# Total Repos : 26
+# Live        : 26
+# Read-Only   : 0
+# Origins at:
+#   GitHub      : 10
+#   Bitbucket   : 7
+#   GitCseIitb  : 9
+#   Others      : 0
+# Groups      : ['all']
+# Users       : ['dhuliya@cse.iitb.ac.in', 'lazynintel@gmail.com']
 
 
 [
@@ -146,6 +158,16 @@
 },
 
 {
+  'dir'         : 'ws/compiler-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:adhuliya/compiler.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
   'dir'         : 'ws/formal-ppt-git',
   'groups'      : ['all'],
   'live'        : True,
@@ -166,16 +188,6 @@
 },
 
 {
-  'dir'         : 'ws/golang/riminet-git',
-  'groups'      : ['all'],
-  'live'        : True,
-  'origin-url'  : 'git@bitbucket.org:lazynintel/riminet.git',
-  'read-only'   : False,
-  'user.email'  : 'lazynintel@gmail.com',
-  'user.name'   : 'lazy nintel',
-},
-
-{
   'dir'         : 'ws/gpg-llvm-git',
   'groups'      : ['all'],
   'live'        : True,
@@ -190,16 +202,6 @@
   'groups'      : ['all'],
   'live'        : True,
   'origin-url'  : 'git@github.com:adhuliya/haskell-practice.git',
-  'read-only'   : False,
-  'user.email'  : 'lazynintel@gmail.com',
-  'user.name'   : 'lazy nintel',
-},
-
-{
-  'dir'         : 'ws/llvm-clang-git',
-  'groups'      : ['all'],
-  'live'        : True,
-  'origin-url'  : 'git@bitbucket.org:lazynintel/llvm-clang.git',
   'read-only'   : False,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'lazy nintel',
@@ -226,16 +228,6 @@
 },
 
 {
-  'dir'         : 'ws/projects/formal-ppt-git',
-  'groups'      : ['all'],
-  'live'        : True,
-  'origin-url'  : 'git@bitbucket.org:lazynintel/formal-ppt.git',
-  'read-only'   : False,
-  'user.email'  : 'lazynintel@gmail.com',
-  'user.name'   : 'lazy nintel',
-},
-
-{
   'dir'         : 'ws/py3-db-driver-git',
   'groups'      : ['all'],
   'live'        : True,
@@ -246,13 +238,13 @@
 },
 
 {
-  'dir'         : 'ws/python/src/compiler-git',
+  'dir'         : 'ws/riminet-git',
   'groups'      : ['all'],
   'live'        : True,
-  'origin-url'  : 'git@github.com:adhuliya/compiler.git',
+  'origin-url'  : 'git@bitbucket.org:lazynintel/riminet.git',
   'read-only'   : False,
-  'user.email'  : 'lazynintel@gmail.com',
-  'user.name'   : 'lazy nintel',
+  'user.email'  : 'dhuliya@cse.iitb.ac.in',
+  'user.name'   : 'anshuman dhuliya',
 },
 
 {
