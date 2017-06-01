@@ -3,11 +3,11 @@
 # Note: The file contents are read using builtins.eval()
 
 # STATS
-# Total Repos : 26
-# Live        : 26
+# Total Repos : 27
+# Live        : 27
 # Read-Only   : 0
 # Origins at:
-#   GitHub      : 10
+#   GitHub      : 11
 #   Bitbucket   : 7
 #   GitCseIitb  : 9
 #   Others      : 0
@@ -155,6 +155,16 @@
   'read-only'   : False,
   'user.email'  : 'dhuliya@cse.iitb.ac.in',
   'user.name'   : 'anshuman dhuliya',
+},
+
+{
+  'dir'         : 'ws/codewalker.in-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'https://github.com/adhuliya/codewalker.in.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
 },
 
 {
