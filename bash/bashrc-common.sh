@@ -9,7 +9,7 @@ export EDITOR="vim"
 
 # MYDATA should be set in /etc/environment file.
 # It should contain a line like given below:
-#   MYDATA=/home/codeman/mydata
+#   MYDATA=/home/adhuliya/mydata
 ################################
 
 
@@ -31,13 +31,13 @@ alias f="find . -name"
 alias c="cd"
 alias ..="cd .."
 
-#alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> /home/codeman/mydata/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "/home/codeman/mydata/mynotes-git/record48-`uname -n`.txt"'
+#alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> /home/adhuliya/mydata/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "/home/adhuliya/mydata/mynotes-git/record48-`uname -n`.txt"'
 
 export NOTESTUB="\n\n\n------------------------------------------------\nNote Heading <a name=\"`date +%Y%m%d-%H%M%S`\"></a>\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> /home/codeman/mydata/git/mynotes-git/record48-nintel.md; vi +/CommaSeparatedKeyword "/home/codeman/mydata/git/mynotes-git/record48-nintel.md"'
-alias rn='vi + "/home/codeman/mydata/git/mynotes-git/record48-nintel.md"'
+alias n='echo -e "$NOTESTUB" >> /home/adhuliya/mydata/git/mynotes-git/record48-nintel.md; vi +/CommaSeparatedKeyword "/home/adhuliya/mydata/git/mynotes-git/record48-nintel.md"'
+alias rn='vi + "/home/adhuliya/mydata/git/mynotes-git/record48-nintel.md"'
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> record48-nintel.md; vi +/CommaSeparatedKeyword "record48-nintel.md"'
