@@ -161,7 +161,7 @@
   'dir'         : 'ws/codewalker.in-git',
   'groups'      : ['all'],
   'live'        : True,
-  'origin-url'  : 'https://github.com/adhuliya/codewalker.in.git',
+  'origin-url'  : 'git@github.com:adhuliya/codewalker.in.git',
   'read-only'   : False,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'lazy nintel',
