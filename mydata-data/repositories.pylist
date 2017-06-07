@@ -3,12 +3,12 @@
 # Note: The file contents are read using builtins.eval()
 
 # STATS
-# Total Repos : 27
-# Live        : 27
+# Total Repos : 31
+# Live        : 31
 # Read-Only   : 0
 # Origins at:
-#   GitHub      : 11
-#   Bitbucket   : 7
+#   GitHub      : 14
+#   Bitbucket   : 8
 #   GitCseIitb  : 9
 #   Others      : 0
 # Groups      : ['all']
@@ -138,6 +138,16 @@
 },
 
 {
+  'dir'         : 'ws/IPstack8051-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:adhuliya/IPstack8051.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
   'dir'         : 'ws/adhuliya.github.io-git',
   'groups'      : ['all'],
   'live'        : True,
@@ -218,6 +228,16 @@
 },
 
 {
+  'dir'         : 'ws/llvm/gpg-llvm-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@bitbucket.org:lazynintel/gpg-llvm.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
   'dir'         : 'ws/llvm/llvm-clang-git',
   'groups'      : ['all'],
   'live'        : True,
@@ -225,6 +245,26 @@
   'read-only'   : False,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/llvm/llvm_passes-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:PrinceDhaliwal/llvm_passes.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/llvm/points-to-constraintgen-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:PrinceDhaliwal/points-to-constraintgen.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'adhuliya',
 },
 
 {
