@@ -24,6 +24,9 @@ from datetime import timedelta as td
 import time # time.sleep()
 
 
+mydata = os.environ.get("MYDATA", "/home/codeman/mydata")
+sys.path.append(osp.join(mydata, "git/ws/ws-misc-git/python/mylib"))
+
 print("executed: ${MYDATA}/git/configs-git/python3/python-startup.py")
 
 
