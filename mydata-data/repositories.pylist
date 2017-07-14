@@ -2,6 +2,8 @@
 # Use only string keys, as keys are sorted for printing
 # Note: The file contents are read using builtins.eval()
 
+# The comment block below is automatically generated. Don't edit.
+
 # STATS
 # Total Repos : 31
 # Live        : 31
