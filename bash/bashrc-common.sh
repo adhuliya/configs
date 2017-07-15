@@ -64,15 +64,22 @@ export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python-startup.py
 
 alias v=vim
 
+alias ac="apt-cache"
 alias acs="apt-cache search"
 alias sag="sudo apt-get"
 alias sagi="sudo apt-get install"
+alias af="apt-file"
+alias afs="apt-file search"
 
 alias time="/usr/bin/time"
 
 alias head1="head -n 1"
 alias head2="head -n 2"
 alias head3="head -n 3"
+
+alias tail1="tail -n 1"
+alias tail2="tail -n 2"
+alias tail3="tail -n 3"
 
 function o {
     xdg-open $1 &> /dev/null & 
