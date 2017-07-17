@@ -2,14 +2,12 @@
 # Use only string keys, as keys are sorted for printing
 # Note: The file contents are read using builtins.eval()
 
-# The comment block below is automatically generated. Don't edit.
-
 # STATS
-# Total Repos : 32
-# Live        : 32
+# Total Repos : 33
+# Live        : 33
 # Read-Only   : 1
 # Origins at:
-#   GitHub      : 15
+#   GitHub      : 16
 #   Bitbucket   : 8
 #   GitCseIitb  : 9
 #   Others      : 0
@@ -307,6 +305,16 @@
   'read-only'   : False,
   'user.email'  : 'dhuliya@cse.iitb.ac.in',
   'user.name'   : 'anshuman dhuliya',
+},
+
+{
+  'dir'         : 'ws/sparcv8-ajit-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:adhuliya/sparcv8-ajit.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
 },
 
 {
