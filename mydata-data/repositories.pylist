@@ -19,7 +19,7 @@
 
 {
   'dir'         : 'bin-git',
-  'groups'      : ['all'],
+  'groups'      : ['all','core'],
   'live'        : True,
   'origin-url'  : 'git@github.com:adhuliya/bin.git',
   'read-only'   : False,
@@ -29,7 +29,7 @@
 
 {
   'dir'         : 'configs-git',
-  'groups'      : ['all'],
+  'groups'      : ['all', 'core'],
   'live'        : True,
   'origin-url'  : 'git@github.com:adhuliya/configs.git',
   'read-only'   : False,

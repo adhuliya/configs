@@ -3,7 +3,7 @@ echo "$(date) bashrc-common.sh executing" >> ${MYDATA}/local/mybash.log
 ################################
 ## MOST IMPORTANT
 ################################
-export PATH="${PATH}:${MYDATA}/git/bin-git"
+export PATH="${PATH}:$MYDATA/local/ubin:${MYDATA}/git/bin-git"
 export CDPATH="${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
 export EDITOR="vim"
 export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
