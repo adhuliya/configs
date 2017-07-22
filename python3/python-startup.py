@@ -9,7 +9,7 @@ when invoked into interactive mode.
 import sys
 
 import re
-import random
+import random as rand
 from collections import deque
 from io import StringIO
 from io import BytesIO
