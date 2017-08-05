@@ -59,7 +59,11 @@ alias egr="egrep -R"
 ## python
 ################
 alias py="python3 -q"
+alias ipy="ipython3"
 export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python-startup.py
+export PY="from re import *;import os.path as osp;import os;\
+p=print;\
+pl=lambda lst, end=os.linesep: [print(item,end=end) for item in lst];"
 ################
 
 alias v=vim
