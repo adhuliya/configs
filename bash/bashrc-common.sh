@@ -162,12 +162,18 @@ function xsl {
 
 #START---CLANG/LLVM RELATED
 
-# clangel = clang emit llvm
-function clangel {
+# clangel = clang emit llvm assembly
+function clangela {
     clang -emit-llvm -S -c $1 -o -;
 }
 
+# clangelb = clang emit llvm bitcode
+function clangelb {
+    clang -emit-llvm -c $1 -o ${1%.*}.bc;
+}
+
 alias clang14="clang++ -std=c++14"
+alias clangel=clangela
 
 #END-----CLANG/LLVM RELATED
 
