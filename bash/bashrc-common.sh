@@ -72,6 +72,8 @@ pl=lambda lst, end=os.linesep: [print(item,end=end) for item in lst];"
 ################
 
 alias v=vim
+alias vr="vim -R"
+alias vir="vim -R"
 
 alias ac="apt-cache"
 alias acs="apt-cache search"
