@@ -28,7 +28,6 @@ alias ll='ls -lF'
 alias lla='ls -alF'
 alias la='ls -a'
 alias l='ls -CF'
-alias f="find . -name"
 alias c="cd"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -65,6 +64,8 @@ alias egr="egrep -R"
 ################
 alias py="python3 -q"
 alias ipy="ipython3"
+alias py3="python3 -q"
+alias ipy3="ipython3"
 export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python-startup.py
 export PY="from re import *;import os.path as osp;import os;\
 p=print;\
@@ -72,8 +73,7 @@ pl=lambda lst, end=os.linesep: [print(item,end=end) for item in lst];"
 ################
 
 alias v=vim
-alias vr="vim -R"
-alias vir="vim -R"
+alias r="vim -R"
 
 alias ac="apt-cache"
 alias acs="apt-cache search"
