@@ -121,7 +121,7 @@ set hlsearch
 set incsearch
 
 set listchars=tab:>~,nbsp:_,trail:.
-set list
+" set list
 
 " set list switch
 :nnoremap <f8> <esc>:set list!<cr>

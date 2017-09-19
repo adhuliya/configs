@@ -179,4 +179,11 @@ alias clangel=clangela
 
 #END-----CLANG/LLVM RELATED
 
+#START---GOLANG golang setup
+export GOPATH=$MYDATA/git/ws/ws-misc-git/golang-git
+export GOBIN=$MYDATA/git/ws/ws-misc-git/golang-git/bin
+export GOLIB=$MYDATA/git/ws/ws-misc-git/golang-git/lib
+#END-----GOLANG golang setup
+
+
 
