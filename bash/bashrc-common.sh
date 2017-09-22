@@ -179,6 +179,16 @@ alias clangel=clangela
 
 #END-----CLANG/LLVM RELATED
 
+#START---markdown related
+
+function vmd {
+  x=`mktemp tmp-XXXXXX.html`
+  markdown $1 > $x
+  xdg-open $x
+}
+
+#END-----markdown related
+
 #START---GOLANG golang setup
 export GOPATH=$MYDATA/git/ws/ws-misc-git/golang-git
 export GOBIN=$MYDATA/git/ws/ws-misc-git/golang-git/bin
