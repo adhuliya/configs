@@ -3,15 +3,15 @@
 # Note: The file contents are read using builtins.eval()
 
 # STATS
-# Total Repos : 32
-# Live        : 32
+# Total Repos : 33
+# Live        : 33
 # Read-Only   : 1
 # Origins at:
 #   GitHub      : 15
 #   Bitbucket   : 8
-#   GitCseIitb  : 9
+#   GitCseIitb  : 10
 #   Others      : 0
-# Groups      : ['all']
+# Groups      : ['all', 'core']
 # Users       : ['dhuliya@cse.iitb.ac.in', 'lazynintel@gmail.com']
 
 
@@ -19,7 +19,7 @@
 
 {
   'dir'         : 'bin-git',
-  'groups'      : ['all','core'],
+  'groups'      : ['all', 'core'],
   'live'        : True,
   'origin-url'  : 'git@github.com:adhuliya/bin.git',
   'read-only'   : False,
@@ -185,6 +185,16 @@
   'read-only'   : False,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'lazy nintel',
+},
+
+{
+  'dir'         : 'ws/cs733-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@git.cse.iitb.ac.in:dhuliya/cs733.git',
+  'read-only'   : False,
+  'user.email'  : 'dhuliya@cse.iitb.ac.in',
+  'user.name'   : 'dhuliya',
 },
 
 {
