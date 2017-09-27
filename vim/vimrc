@@ -98,8 +98,8 @@ set ai
 "expand tab to spaces: 
 "use :retab to change any previous tabs to spaces
 "use :set list to see any tabs in the file as ^I
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set sm "shows matching parenthesis/brackets/braces momentarily
 
