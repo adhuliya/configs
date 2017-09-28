@@ -182,7 +182,7 @@ alias clangel=clangela
 #START---markdown related
 
 function vmd {
-  x=`mktemp tmp-XXXXXX.html`
+  x=`mktemp /tmp/tmp-XXXXXX.html`
   markdown $1 > $x
   xdg-open $x
 }
