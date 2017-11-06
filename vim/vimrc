@@ -174,10 +174,6 @@ set clipboard=unnamed
 :nnoremap H ^
 :vnoremap L $
 :vnoremap H ^
-:nnoremap <c-u> {
-:nnoremap <c-d> }
-:vnoremap <c-u> {
-:vnoremap <c-d> }
 
 " pa://github.com/adhuliya/config-files.gitte from clipboard
 :nnoremap <leader>v "+p
@@ -187,6 +183,8 @@ set clipboard=unnamed
 
 " add new line
 :nnoremap <cr> o<esc>
+" add a space
+:nnoremap <leader><leader> i <esc>
 
 " navigate between buffers
 :nnoremap <tab> <esc>:bp<cr>
