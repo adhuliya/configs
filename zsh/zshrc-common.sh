@@ -193,6 +193,13 @@ alias mdv=vmd
 
 #END-----markdown related
 
+#START---study timer
+function study {
+    # takes one argument: no. of seconds
+    sleep $1 && notify-send "Time just up" "$1 seconds done" && sleep 120 && notify-send "Time + 2 mins up" "$1 + 120 seconds done";
+}
+#END-----study timer
+
 #START---GOLANG golang setup
 export GOPATH=$MYDATA/git/ws/ws-misc-git/golang-git
 export GOBIN=$MYDATA/git/ws/ws-misc-git/golang-git/bin
