@@ -69,9 +69,8 @@ alias ipy="ipython3"
 alias py3="python3 -q"
 alias ipy3="ipython3"
 export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python-startup.py
-export PY="from re import *;import os.path as osp;import os;\
-p=print;\
-pl=lambda lst, end=os.linesep: [print(item,end=end) for item in lst];"
+export PY="import re;import os.path as osp;import os;import sys;\
+pl=lambda lst, func=lambda x: x, end=os.linesep: [print(func(item),end=end) for item in lst];"
 ################
 
 alias v=vim
@@ -196,7 +195,9 @@ alias mdv=vmd
 #START---study timer
 function study {
     # takes one argument: no. of seconds
-    sleep $1 && notify-send "Time just up" "$1 seconds done" && sleep 120 && notify-send "Time + 2 mins up" "$1 + 120 seconds done";
+    HALF=$(($1/2))
+    EXTRA=120
+    notify-send "Timer Started" "$1 seconds" && echo "Timer Started: $1 seconds" && sleep $HALF && notify-send "Half time up" "$HALF seconds left" && echo "$HALF seconds left." && sleep $HALF && notify-send "Time Up !!" "$1 seconds done" && echo "$1 seconds done" && sleep $EXTRA && notify-send "+ $EXTRA seconds up" "$1 + $EXTRA seconds done" && echo "$1 + $EXTRA seconds done";
 }
 #END-----study timer
 
