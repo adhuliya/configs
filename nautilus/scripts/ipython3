@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-gnome-terminal -x zsh -c python3
+gnome-terminal -x zsh -c ipython3
 
