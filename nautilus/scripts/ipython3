@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+gnome-terminal -x zsh -c python3
+

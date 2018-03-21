@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+gnome-terminal
+#cd ${NAUTILUS_SCRIPT_CURRENT_URI}
+#terminator -e "zsh"

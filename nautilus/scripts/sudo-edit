@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+gnome-terminal -e "sudo vim ${NUTILUS_SCRIPT_SELECTED_FILE_PATHS}"
+
