@@ -202,9 +202,11 @@ function study {
 #END-----study timer
 
 #START---GOLANG golang setup
-export GOPATH=$MYDATA/git/ws/ws-misc-git/golang-git
-export GOBIN=$MYDATA/git/ws/ws-misc-git/golang-git/bin
-export GOLIB=$MYDATA/git/ws/ws-misc-git/golang-git/lib
+export GOPATH=$MYDATA/git/ws/ws-misc-git/golang
+export GOBIN=$MYDATA/git/ws/ws-misc-git/golang/bin
+export GOLIB=$MYDATA/git/ws/ws-misc-git/golang/pkg
+export GOROOT=$MYDATA/local/packages-live/go
+export PATH=$GOROOT/bin:$PATH
 #END-----GOLANG golang setup
 
 
