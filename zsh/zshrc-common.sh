@@ -1,19 +1,20 @@
 # NOTE: Adapted from .bashrc
 
-echo "$(date) bashrc-common.sh executing" >> ${MYDATA}/local/mybash.log
+# MYDATA should be set in /etc/environment file.
+# It should contain a line like given below:
+#   MYDATA=/home/codeman/mydata
+
+echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/mybash.log
 
 ################################
 ## MOST IMPORTANT
 ################################
-export PATH="${PATH}:$MYDATA/local/ubin:${MYDATA}/git/bin-git"
+export PATH="$MYDATA/local/bin:${MYDATA}/git/bin-git:${PATH}"
 export CDPATH="${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
 export EDITOR="vim"
 export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
 
-# MYDATA should be set in /etc/environment file.
-# It should contain a line like given below:
-#   MYDATA=/home/codeman/mydata
-################################
+#END############################
 
 
 ################################
@@ -116,8 +117,8 @@ function psg {
 function psgk {
     kill $(ps -aux | grep "$@" | grep -v "grep" | getcol 2) ;
 }
-################################
 
+#END############################
 
 
 ################################
@@ -163,7 +164,10 @@ function xsl {
 
 #END#########################
 
-#START---CLANG/LLVM RELATED
+
+#############################
+## CLANG/LLVM RELATED
+#############################
 
 # clangel = clang emit llvm assembly
 function clangela {
@@ -178,9 +182,12 @@ function clangelb {
 alias clang14="clang++ -std=c++14"
 alias clangel=clangela
 
-#END-----CLANG/LLVM RELATED
+#END#########################
 
-#START---markdown related
+
+#############################
+## MARKDOWN RELATED
+#############################
 
 function vmd {
   x=`mktemp /tmp/tmp-XXXXXX.html`
@@ -190,24 +197,34 @@ function vmd {
 
 alias mdv=vmd
 
-#END-----markdown related
+#END#########################
 
-#START---study timer
+
+#############################
+## STUDY TIMER
+#############################
+
 function study {
     # takes one argument: no. of seconds
     HALF=$(($1/2))
     EXTRA=120
     notify-send "Timer Started" "$1 seconds" && echo "Timer Started: $1 seconds" && sleep $HALF && notify-send "Half time up" "$HALF seconds left" && echo "$HALF seconds left." && sleep $HALF && notify-send "Time Up !!" "$1 seconds done" && echo "$1 seconds done" && sleep $EXTRA && notify-send "+ $EXTRA seconds up" "$1 + $EXTRA seconds done" && echo "$1 + $EXTRA seconds done";
 }
-#END-----study timer
 
-#START---GOLANG golang setup
+#END#########################
+
+
+#############################
+## GOLANG golang setup
+#############################
+
 export GOPATH=$MYDATA/git/ws/ws-misc-git/golang
 export GOBIN=$MYDATA/git/ws/ws-misc-git/golang/bin
 export GOLIB=$MYDATA/git/ws/ws-misc-git/golang/pkg
 export GOROOT=$MYDATA/local/packages-live/go
 export PATH=$GOROOT/bin:$PATH
-#END-----GOLANG golang setup
+
+#END#########################
 
 
 
