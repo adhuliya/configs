@@ -3,11 +3,11 @@
 # Note: The file contents are read using builtins.eval()
 
 # STATS
-# Total Repos : 34
-# Live        : 34
-# Read-Only   : 1
+# Total Repos : 33
+# Live        : 33
+# Read-Only   : 0
 # Origins at:
-#   GitHub      : 16
+#   GitHub      : 15
 #   Bitbucket   : 8
 #   GitCseIitb  : 10
 #   Others      : 0
@@ -263,16 +263,6 @@
   'live'        : True,
   'origin-url'  : 'git@bitbucket.org:lazynintel/llvm-clang.git',
   'read-only'   : False,
-  'user.email'  : 'lazynintel@gmail.com',
-  'user.name'   : 'lazy nintel',
-},
-
-{
-  'dir'         : 'ws/llvm/llvm_passes',
-  'groups'      : ['all'],
-  'live'        : True,
-  'origin-url'  : 'git@github.com:PrinceDhaliwal/llvm_passes.git',
-  'read-only'   : True,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'lazy nintel',
 },
