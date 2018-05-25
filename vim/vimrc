@@ -28,6 +28,8 @@ set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 Plugin 'majutsushi/tagbar'
+
+Plugin 'fatih/vim-go'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -98,8 +100,8 @@ set ai
 "expand tab to spaces: 
 "use :retab to change any previous tabs to spaces
 "use :set list to see any tabs in the file as ^I
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set sm "shows matching parenthesis/brackets/braces momentarily
 
