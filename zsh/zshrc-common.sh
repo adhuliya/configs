@@ -16,6 +16,15 @@ export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
 
 #END############################
 
+################################
+## fullscreen VIM based command editing, like in bash
+################################
+
+autoload edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+#END############################
 
 ################################
 ## Common shortcuts
@@ -46,6 +55,7 @@ export NOTESTUB="\n\n\n------------------------------------------------\nNote He
 # global notes
 alias n='echo -e "$NOTESTUB" >> ${MYDATA}/git/mynotes-git/record48-nintel.md; vi +/CommaSeparatedKeyword "${MYDATA}/git/mynotes-git/record48-nintel.md"'
 alias rn='vi + "${MYDATA}/git/mynotes-git/record48-nintel.md"'
+alias bullets="cd ${MYDATA}/git/research/writeups/research-notes-git/tiddlywiki/others; vi bullets.md;"
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> record48-nintel.md; vi +/CommaSeparatedKeyword "record48-nintel.md"'
