@@ -17,6 +17,18 @@ export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
 #END############################
 
 ################################
+## Make Home and End key work over ssh
+################################
+
+#bindkey '\e[1~' beginning-of-line
+#bindkey '\e[4~' end-of-line
+
+bindkey '^[OH' beginning-of-line
+bindkey '^[OF' end-of-line
+
+################################
+
+################################
 ## fullscreen VIM based command editing, like in bash
 ################################
 
