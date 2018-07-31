@@ -1,7 +1,9 @@
 # one file name on one line with absolute path
+
 /etc/environment
 
 /home/codeman/.zshrc
+/home/codeman/.zsh_history
 
 /home/codeman/.bashrc
 
