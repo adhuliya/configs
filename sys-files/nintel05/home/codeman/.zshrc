@@ -91,41 +91,40 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source $MYDATA/git/configs-git/zsh/zshrc-user.sh
-
 if [[ -s '/etc/zsh_command_not_found' ]]; then
   source '/etc/zsh_command_not_found'
 fi
 
-MY_LLVM_PATH="/home/codeman/mydata/local/packages-live/clang-llvm5/build/bin"
-export PATH=$MY_LLVM_PATH:$PATH
+source $MYDATA/git/configs-git/zsh/zshrc-user.sh
 
-## Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-#export COCOS_CONSOLE_ROOT="/home/codeman/mydata/local/tmp/downloads/cocos2d-x/cocos2d-x-3.16/tools/cocos2d-console/bin"
-#export PATH=$COCOS_CONSOLE_ROOT:$PATH
+export PATH="/home/codeman/.itsoflife/local/packages-live/llvm-clang6/build/bin:$MYDATA/local/packages-live/GoLand-2018.2/bin:$MYDATA/local/packages-live/clion-2018.2/bin:$MYDATA/local/packages-live/pycharm-2018.2/bin:$PATH"
+
+#MY_LLVM_PATH="/home/codeman/mydata/local/packages-live/clang-llvm5/build/bin"
+#export PATH=$MY_LLVM_PATH:$PATH
+
+### Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+##export COCOS_CONSOLE_ROOT="/home/codeman/mydata/local/tmp/downloads/cocos2d-x/cocos2d-x-3.16/tools/cocos2d-console/bin"
+##export PATH=$COCOS_CONSOLE_ROOT:$PATH
+##
+### Add environment variable COCOS_X_ROOT for cocos2d-x
+##export COCOS_X_ROOT="/home/codeman/mydata/local/tmp/downloads/cocos2d-x"
+##export PATH=$COCOS_X_ROOT:$PATH
+##
+### Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+##export COCOS_TEMPLATES_ROOT="/home/codeman/mydata/local/tmp/downloads/cocos2d-x/cocos2d-x-3.16/templates"
+##export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 #
-## Add environment variable COCOS_X_ROOT for cocos2d-x
-#export COCOS_X_ROOT="/home/codeman/mydata/local/tmp/downloads/cocos2d-x"
-#export PATH=$COCOS_X_ROOT:$PATH
+## Add environment variable NDK_ROOT for cocos2d-x
+#export NDK_ROOT="/home/codeman/Android/Sdk/ndk-bundle"
+#export PATH=$NDK_ROOT:$PATH
 #
-## Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-#export COCOS_TEMPLATES_ROOT="/home/codeman/mydata/local/tmp/downloads/cocos2d-x/cocos2d-x-3.16/templates"
-#export PATH=$COCOS_TEMPLATES_ROOT:$PATH
-
-# Add environment variable NDK_ROOT for cocos2d-x
-export NDK_ROOT="/home/codeman/Android/Sdk/ndk-bundle"
-export PATH=$NDK_ROOT:$PATH
-
-# Add environment variable ANDROID_SDK_ROOT for cocos2d-x
-export ANDROID_SDK_ROOT="/home/codeman/Android/Sdk"
-export PATH=$ANDROID_SDK_ROOT:$PATH
-export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
-
-# Add environment variable ANT_ROOT for cocos2d-x
-export ANT_ROOT="/usr/share/ant/bin"
-export PATH=$ANT_ROOT:$PATH
-
-export SHALLOW_PARSER_HIN="/home/codeman/mydata/local/packages-live/shallow-parser-hin-4.0.fc8"
-export PATH=$SHALLOW_PARSER_HIN/bin/sys/hin:$PATH
+## Add environment variable ANDROID_SDK_ROOT for cocos2d-x
+#export ANDROID_SDK_ROOT="/home/codeman/Android/Sdk"
+#export PATH=$ANDROID_SDK_ROOT:$PATH
+#export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
+#
+## Add environment variable ANT_ROOT for cocos2d-x
+#export ANT_ROOT="/usr/share/ant/bin"
+#export PATH=$ANT_ROOT:$PATH
 
 

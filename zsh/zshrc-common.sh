@@ -4,7 +4,7 @@
 # It should contain a line like given below:
 #   MYDATA=/home/codeman/mydata
 
-echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/mybash.log
+echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/mybash.log
 
 ################################
 ## MOST IMPORTANT
@@ -129,7 +129,7 @@ function e {
 }
 
 function b {
-    "$@" &> /dev/null &
+    nohup "$@" &> /dev/null &
 }
 
 function psg {
@@ -243,8 +243,8 @@ function study {
 export GOPATH=$MYDATA/git/ws/ws-misc-git/golang
 export GOBIN=$MYDATA/git/ws/ws-misc-git/golang/bin
 export GOLIB=$MYDATA/git/ws/ws-misc-git/golang/pkg
-export GOROOT=$MYDATA/local/packages-live/go
-export PATH=$GOROOT/bin:$PATH
+#export GOROOT=$MYDATA/local/packages-live/go
+#export PATH=$GOROOT/bin:$PATH
 
 #END#########################
 

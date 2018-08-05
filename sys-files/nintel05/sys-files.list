@@ -1,4 +1,4 @@
-# one file name on one line with absolute path
+# one file/dir name on one line with absolute path
 
 /etc/environment
 
@@ -8,3 +8,5 @@
 /home/codeman/.bashrc
 
 /home/codeman/.config/i3/config
+
+/etc/systemd/system/ad-i3lock.service

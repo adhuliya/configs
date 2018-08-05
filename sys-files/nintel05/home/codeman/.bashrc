@@ -2,8 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-echo "$(date) ~/.bashrc executing" >> ${MYDATA}/local/mybash.log
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -117,38 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# export MYDATA=/home/codeman/mydata
-source $MYDATA/git/configs-git/bash/bashrc-user.sh
-
-export LLVMbin="$MYDATA/local/packages-live/clang-llvm/build/bin"
-export PATH="$LLVMbin:$PATH"
-export PATH="$MYDATA/local/packages-live/pycharm-2017.1.3/bin:$PATH"
-export PATH="/usr/local/MATLAB/R2015b/bin:$PATH"
-export PATH="/home/codeman/mydata/local/packages-live/WinFIG:$PATH"
-export PATH="/home/codeman/Android/Sdk/build-tools/25.0.2:$PATH"
-
-# START For Project sparcv8-ajit
-
-export OLD_PATH=$PATH
-export OLD_LD_LIBRARY_PATH=$LD_LIBRARY_PATH
-export OLD_PYTHONPATH=$PYTHONPATH
-
-function setajit {
-    export AJIT_PROJECT_HOME="${MYDATA}/git/ws/sparcv8-ajit-git/ajit_tools"
-    export PATH="${AJIT_PROJECT_HOME}/bin:$PATH"
-    export PYTHONPATH="$OLD_PYTHONPATH:${MYDATA}/git/ws/sparcv8-ajit-git/src"
-    export LD_LIBRARY_PATH=${AJIT_PROJECT_HOME}/lib:$LD_LIBRARY_PATH
-    #export LD_LIBRARY_PATH=/vlsi/cad/foss/glibc/glibc_214/lib:$LD_LIBRARY_PATH 
-}
-
-function unsetajit {
-    export AJIT_PROJECT_HOME=""
-    export PATH=$OLD_PATH
-    export LD_LIBRARY_PATH=$OLD_LD_LIBRARY_PATH
-    export PYTHONPATH=$OLD_PYTHONPATH
-}
-
-# END   For Project sparcv8-ajit
-
-
