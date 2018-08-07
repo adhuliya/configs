@@ -9,4 +9,7 @@
 
 /home/codeman/.config/i3/config
 
+/home/codeman/.vimrc
+/home/codeman/.vim/ftplugin
+
 /etc/systemd/system/ad-i3lock.service
