@@ -223,20 +223,6 @@ alias mdv=vmd
 
 
 #############################
-## STUDY TIMER
-#############################
-
-function study {
-    # takes one argument: no. of seconds
-    HALF=$(($1/2))
-    EXTRA=120
-    notify-send "Timer Started" "$1 seconds" && echo "Timer Started: $1 seconds" && sleep $HALF && notify-send "Half time up" "$HALF seconds left" && echo "$HALF seconds left." && sleep $HALF && notify-send "Time Up !!" "$1 seconds done" && echo "$1 seconds done" && sleep $EXTRA && notify-send "+ $EXTRA seconds up" "$1 + $EXTRA seconds done" && echo "$1 + $EXTRA seconds done";
-}
-
-#END#########################
-
-
-#############################
 ## GOLANG golang setup
 #############################
 
