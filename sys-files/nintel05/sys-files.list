@@ -8,6 +8,7 @@
 /home/codeman/.bashrc
 
 /home/codeman/.config/i3
+/etc/i3blocks.conf
 
 /home/codeman/.vimrc
 /home/codeman/.vim/ftplugin

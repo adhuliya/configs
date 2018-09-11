@@ -97,7 +97,8 @@ fi
 
 source $MYDATA/git/configs-git/zsh/zshrc-user.sh
 
-export PATH="/home/codeman/.itsoflife/local/packages-live/llvm-clang6/build/bin:$MYDATA/local/packages-live/qt5/Tools/QtCreator/bin:$MYDATA/local/packages-live/GoLand-2018.2/bin:$MYDATA/local/packages-live/clion-2018.2/bin:$MYDATA/local/packages-live/pycharm-2018.2/bin:$PATH"
+# edit PATH in ~/.profile
+#export PATH="/home/codeman/.itsoflife/local/packages-live/llvm-clang6/build/bin:$MYDATA/local/packages-live/qt5/Tools/QtCreator/bin:$MYDATA/local/packages-live/GoLand-2018.2/bin:$MYDATA/local/packages-live/clion-2018.2/bin:$MYDATA/local/packages-live/pycharm-2018.2/bin:$PATH"
 
 #MY_LLVM_PATH="/home/codeman/mydata/local/packages-live/clang-llvm5/build/bin"
 #export PATH=$MY_LLVM_PATH:$PATH
