@@ -1,0 +1,184 @@
+set encoding=utf-8
+set nocompatible
+let mapleader = " "
+let maplocalleader= "-"
+
+" use zm (fold more) and zr (fold less); Also zM/zR for 'all the way'
+" set foldnestmax=2
+set foldmethod=syntax
+
+
+""""""""""""""""""""""""""""""""
+"" General Settings
+""""""""""""""""""""""""""""""""
+" set current working directory (cwd) to that of the current file
+autocmd BufEnter * silent! lcd %:p:h
+
+set relativenumber
+set number
+set numberwidth=5
+
+function! NumberToggle()
+  if(&relativenumber)
+    set norelativenumber
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap  :call NumberToggle()<cr>
+
+" allows incrementing a to b ... too using <c-a> and <c-x>
+set nrformats+=alpha
+
+set ai
+"expand tab to spaces: 
+"use :retab to change any previous tabs to spaces
+"use :set list to see any tabs in the file as ^I
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set sm "shows matching parenthesis/brackets/braces momentarily
+
+filetype plugin on
+filetype indent on
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=darkgray
+set wrap  " although the default
+set linebreak
+set breakindent  " displays proper indent
+set showbreak=>>>\ 
+
+
+" wraps line at around column 79, at word boundaries.
+" set textwidth=79
+
+set hlsearch
+set incsearch
+
+set listchars=tab:>~,nbsp:_,trail:.
+" set list
+
+" set list switch
+:nnoremap <f8> <esc>:set list!<cr>
+
+" copy text to system clipboard
+:vnoremap y "+y
+
+" enable system clipboard
+set clipboard=unnamed
+
+""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""
+"" Remap keys
+""""""""""""""""""""""""""""""""
+
+" takes you to normal mode when jk or kj is typed
+:inoremap jk <esc>
+:inoremap kj <esc>
+:inoremap JK <esc>
+:inoremap KJ <esc>
+
+" disable esc key to use jk instead
+" :inoremap <esc> <nop> 
+
+" edit .vimrc file
+:nnoremap <leader>ev :split $MYVIMRC<cr>
+
+" source .vimrc file (read its settings in the current vim session)
+:nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" To search for visually selected text
+:vnoremap <leader>/ y/<C-R>"<CR>
+
+" double quote visually selected area
+:vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
+:vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
+
+" capitalize a word
+:nnoremap <leader>c viw~e
+
+" split vertical
+:nnoremap <leader>e :vsp<cr>
+
+" split horizontal
+:nnoremap <leader>o :sp<cr>
+
+" in-buffer navigation
+:nnoremap L $
+:nnoremap H ^
+:vnoremap L $
+:vnoremap H ^
+
+" pa://github.com/adhuliya/config-files.gitte from clipboard
+:nnoremap <leader>v "+p
+
+" select whole file
+" :nnoremap <c-a> <esc>gg<s-v>G
+
+" add new line
+:nnoremap <cr> o<esc>
+" add a space
+:nnoremap <leader><leader> i <esc>
+
+" navigate between buffers
+:nnoremap <tab> <esc>:bp<cr>
+:nnoremap <s-tab> <esc>:bn<cr>
+
+" normal file related shortcuts
+:nnoremap <f2> <esc>:w<cr>
+:nnoremap <f4> <esc>:q<cr>
+:nnoremap <f1> <esc>:help 
+:nnoremap <f3> <esc>:NERDTreeToggle<cr>
+:nnoremap <f12> <esc>:TagbarToggle<cr>
+
+" navigate between split windows
+:nnoremap <c-h> <c-w>h
+:nnoremap <c-j> <c-w>j
+:nnoremap <c-k> <c-w>k
+:nnoremap <c-l> <c-w>l
+
+" list current buffers
+:nnoremap <leader>b <esc>:ls<cr>
+
+" Fast window resizing with +/- keys (horizontal); / and * keys (vertical)
+if bufwinnr(1)
+  map <c-up> <C-W>+
+  map <c-down> <C-W>-
+  map <c-left> <c-w><
+  map <c-right> <c-w>>
+endif
+""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""
+"" Spell Check settings
+""""""""""""""""""""""""""""""""
+set spelllang=en
+:nnoremap <f7> <esc>:setlocal spell!<cr>
+""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""
+"" Remove all trailing whitespace by pressing F5
+""""""""""""""""""""""""""""""""
+nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""
+""" Nim go to definition
+"""""""""""""""""""""""""""""""""
+"
+"fun! JumpToDef()
+"  if exists("*GotoDefinition_" . &filetype)
+"    call GotoDefinition_{&filetype}()
+"  else
+"    exe "norm! \<C-]>"
+"  endif
+"endf
+"
+"" Jump to tag
+"nn <M-g> :call JumpToDef()<cr>
+"ino <M-g> <esc>:call JumpToDef()<cr>i
+"""""""""""""""""""""""""""""""""

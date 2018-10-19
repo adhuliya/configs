@@ -12,5 +12,6 @@
 
 /home/codeman/.vimrc
 /home/codeman/.vim/ftplugin
+/home/codeman/.ideavimrc
 
 /etc/systemd/system/ad-i3lock.service

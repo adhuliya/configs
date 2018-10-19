@@ -48,6 +48,7 @@ set -o vi
 #export HISTFILESIZE=-1
 #export HISTSIZE=-1
 
+alias tree='tree -L 2'
 alias ll='ls -lF'
 alias lla='ls -alF'
 alias la='ls -a'
@@ -70,8 +71,8 @@ alias rn='vi + "${MYDATA}/git/mynotes-git/record48-nintel.md"'
 alias bullets="cd ${MYDATA}/git/research/writeups/research-notes-git/tiddlywiki/others; vi bullets.md;"
 
 # local notes
-alias nl='echo -e "$NOTESTUB" >> record48-nintel.md; vi +/CommaSeparatedKeyword "record48-nintel.md"'
-alias rnl='vi + "record48-nintel.md"'
+alias nl='echo -e "$NOTESTUB" >> README.md; vi +/CommaSeparatedKeyword "README.md"'
+alias rnl='vi + "README.md"'
 
 alias s=sudo
 alias ss="sudo su"
@@ -79,10 +80,8 @@ alias ss="sudo su"
 alias x="xscreensaver -nosplash &"
 alias xl="xscreensaver-command --lock &"
 
-alias g=grep
-alias gr="grep -R"
-alias eg=egrep
-alias egr="egrep -R"
+alias g=egrep
+alias gr="egrep -R"
 
 ################
 ## python
