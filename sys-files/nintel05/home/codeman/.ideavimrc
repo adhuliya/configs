@@ -128,13 +128,6 @@ set clipboard=unnamed
 :nnoremap <tab> <esc>:bp<cr>
 :nnoremap <s-tab> <esc>:bn<cr>
 
-" normal file related shortcuts
-:nnoremap <f2> <esc>:w<cr>
-:nnoremap <f4> <esc>:q<cr>
-:nnoremap <f1> <esc>:help 
-:nnoremap <f3> <esc>:NERDTreeToggle<cr>
-:nnoremap <f12> <esc>:TagbarToggle<cr>
-
 " navigate between split windows
 :nnoremap <c-h> <c-w>h
 :nnoremap <c-j> <c-w>j

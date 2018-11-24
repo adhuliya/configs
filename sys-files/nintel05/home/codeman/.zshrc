@@ -1,4 +1,5 @@
-# If you come from bash you might have to change your $PATH.
+# Command to get ohmyzsh: (help url: https://github.com/robbyrussell/oh-my-zsh)
+# sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -129,3 +130,7 @@ source $MYDATA/git/configs-git/zsh/zshrc-user.sh
 #export PATH=$ANT_ROOT:$PATH
 
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/codeman/.sdkman"
+[[ -s "/home/codeman/.sdkman/bin/sdkman-init.sh" ]] && source "/home/codeman/.sdkman/bin/sdkman-init.sh"

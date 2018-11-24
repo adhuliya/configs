@@ -1,0 +1,21 @@
+[global_config]
+  extra_styling = False
+  title_font = Sans 1
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+      size = 900, 410
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#300a24"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    show_titlebar = False

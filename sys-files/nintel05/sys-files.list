@@ -9,6 +9,7 @@
 
 /home/codeman/.config/i3
 /etc/i3blocks.conf
+/home/codeman/.config/terminator/config
 
 /home/codeman/.vimrc
 /home/codeman/.vim/ftplugin

@@ -4,7 +4,7 @@
 # It should contain a line like given below:
 #   MYDATA=/home/codeman/mydata
 
-echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/mybash.log
+echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/myshell.log
 
 ################################
 ## MOST IMPORTANT
