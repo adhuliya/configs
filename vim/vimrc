@@ -29,7 +29,6 @@ set laststatus=2
 set t_Co=256
 Plugin 'majutsushi/tagbar'
 
-Plugin 'fatih/vim-go'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -230,19 +229,3 @@ set spelllang=en
 nnoremap <F6> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 """"""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""
-""" Nim go to definition
-"""""""""""""""""""""""""""""""""
-"
-"fun! JumpToDef()
-"  if exists("*GotoDefinition_" . &filetype)
-"    call GotoDefinition_{&filetype}()
-"  else
-"    exe "norm! \<C-]>"
-"  endif
-"endf
-"
-"" Jump to tag
-"nn <M-g> :call JumpToDef()<cr>
-"ino <M-g> <esc>:call JumpToDef()<cr>i
-"""""""""""""""""""""""""""""""""
