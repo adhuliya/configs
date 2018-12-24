@@ -68,6 +68,7 @@ export NOTESTUB="\n\n\n------------------------------------------------\nNote He
 # global notes
 alias n='echo -e "$NOTESTUB" >> ${MYDATA}/git/mynotes-git/record48-nintel.md; vi +/CommaSeparatedKeyword "${MYDATA}/git/mynotes-git/record48-nintel.md"'
 alias rn='vi + "${MYDATA}/git/mynotes-git/record48-nintel.md"'
+alias vn='vmd "${MYDATA}/git/mynotes-git/record48-nintel.md"'
 alias bullets="cd ${MYDATA}/git/research/writeups/research-notes-git/tiddlywiki/others; vi bullets.md;"
 
 # local notes
@@ -75,12 +76,12 @@ alias nl='echo -e "$NOTESTUB" >> README.md; vi +/CommaSeparatedKeyword "README.m
 alias rnl='vi + "README.md"'
 
 alias s=sudo
-alias ss="sudo su"
 
 alias x="xscreensaver -nosplash &"
 alias xl="xscreensaver-command --lock &"
 
 alias g=egrep
+alias eg=egrep
 alias gr="egrep -R"
 
 ################
@@ -114,6 +115,11 @@ alias head3="head -n 3"
 alias tail1="tail -n 1"
 alias tail2="tail -n 2"
 alias tail3="tail -n 3"
+
+function shot {
+  # invokes screenshot program `import`, giving it a filename.
+  import $MYDATA/local/home/Pictures/$(mktemp -u "`date +"%Y%m%d-%H%M%S"`-XXXXXXXX.png")
+}
 
 function o {
     xdg-open $1 &> /dev/null & 
