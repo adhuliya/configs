@@ -3,11 +3,11 @@
 # Note: The file contents are read using builtins.eval()
 
 # STATS
-# Total Repos : 33
-# Live        : 33
+# Total Repos : 34
+# Live        : 34
 # Read-Only   : 0
 # Origins at:
-#   GitHub      : 15
+#   GitHub      : 16
 #   Bitbucket   : 8
 #   GitCseIitb  : 10
 #   Others      : 0
@@ -45,6 +45,16 @@
   'read-only'   : False,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'Lazy Nintel',
+},
+
+{
+  'dir'         : 'research/code/SPAN-components-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@github.com:ronakchauhan97/SPAN-components.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'adhuliya',
 },
 
 {
