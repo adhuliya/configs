@@ -106,7 +106,7 @@ alias sagi="sudo apt-get install"
 alias af="apt-file"
 alias afs="apt-file search"
 
-alias time="/usr/bin/time"
+alias timeit="/usr/bin/time"
 
 alias head1="head -n 1"
 alias head2="head -n 2"
