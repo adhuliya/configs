@@ -3,13 +3,13 @@
 # Note: The file contents are read using builtins.eval()
 
 # STATS
-# Total Repos : 34
-# Live        : 34
+# Total Repos : 35
+# Live        : 35
 # Read-Only   : 0
 # Origins at:
 #   GitHub      : 16
 #   Bitbucket   : 8
-#   GitCseIitb  : 10
+#   GitCseIitb  : 11
 #   Others      : 0
 # Groups      : ['all', 'core']
 # Users       : ['dhuliya@cse.iitb.ac.in', 'lazynintel@gmail.com']
@@ -48,13 +48,23 @@
 },
 
 {
-  'dir'         : 'research/code/SPAN-components-git',
+  'dir'         : 'research/code/SLANG-git',
   'groups'      : ['all'],
   'live'        : True,
-  'origin-url'  : 'git@github.com:ronakchauhan97/SPAN-components.git',
+  'origin-url'  : 'git@github.com:ronakchauhan97/SLANG.git',
   'read-only'   : False,
   'user.email'  : 'lazynintel@gmail.com',
   'user.name'   : 'adhuliya',
+},
+
+{
+  'dir'         : 'research/code/SPAN-CS614-Spring-2019-git',
+  'groups'      : ['all'],
+  'live'        : True,
+  'origin-url'  : 'git@git.cse.iitb.ac.in:dhuliya/SPAN-CS614-Spring-2019.git',
+  'read-only'   : False,
+  'user.email'  : 'lazynintel@gmail.com',
+  'user.name'   : 'lazy nintel',
 },
 
 {

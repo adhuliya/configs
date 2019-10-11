@@ -66,10 +66,10 @@ alias lti="links internet.iitb.ac.in"
 export NOTESTUB="\n\n\n------------------------------------------------\nNote Heading <a name=\"`date +%Y%m%d-%H%M%S`\"></a>\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> ${MYDATA}/git/mynotes-git/record48-nintel.md; vi +/CommaSeparatedKeyword "${MYDATA}/git/mynotes-git/record48-nintel.md"'
-alias rn='vi + "${MYDATA}/git/mynotes-git/record48-nintel.md"'
-alias vn='vmd "${MYDATA}/git/mynotes-git/record48-nintel.md"'
-alias bullets="cd ${MYDATA}/git/research/writeups/research-notes-git/tiddlywiki/others; vi bullets.md;"
+alias n='echo -e "$NOTESTUB" >> ${MYDATA}/../knotes-git/quick-notes.md; vi +/CommaSeparatedKeyword "${MYDATA}/../knotes-git/quick-notes.md"'
+alias rn='vi + "${MYDATA}/../knotes-git/quick-notes.md"'
+alias knotes="cd ${MYDATA}/../knotes-git; vi _knotes.md;"
+alias tasks="cd ${MYDATA}/../knotes-git; vi tasks.md;"
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> README.md; vi +/CommaSeparatedKeyword "README.md"'
@@ -91,7 +91,7 @@ alias py="python3 -q"
 alias ipy="ipython3"
 alias py3="python3 -q"
 alias ipy3="ipython3"
-export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python-startup.py
+export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python3-startup.py
 export PY="import re;import os.path as osp;import os;import sys;\
 pl=lambda lst, func=lambda x: x, end=os.linesep: [print(func(item),end=end) for item in lst];"
 ################

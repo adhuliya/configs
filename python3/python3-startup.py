@@ -23,11 +23,13 @@ from datetime import datetime as dt
 from datetime import timedelta as td
 import time # time.sleep()
 
+from util import hexToFloat, hexToDouble
+
 
 # instead set the PYTHONPATH environment variable
-# mydata = os.environ.get("MYDATA", "/home/codeman/mydata")
+# mydata = os.environ.get("MYDATA", "/home/codeman/.itsoflife/mydata")
 # sys.path.append(osp.join(mydata, "git/ws/ws-misc-git/python/mylib"))
 
-print("executed: ${MYDATA}/git/configs-git/python3/python-startup.py")
+print("executed: ${MYDATA}/git/configs-git/python3/python3-startup.py")
 
 
