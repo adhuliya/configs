@@ -1,0 +1,21 @@
+# one file/dir name on one line with absolute path
+# any line starting with "/" is cosidered a path
+
+/etc/environment
+
+/home/codeman/.profile
+
+/home/codeman/.zshrc
+/home/codeman/.zsh_history
+
+/home/codeman/.bashrc
+
+/home/codeman/.config/i3
+/etc/i3blocks.conf
+/home/codeman/.config/terminator/config
+
+/home/codeman/.vimrc
+/home/codeman/.vim/ftplugin
+/home/codeman/.ideavimrc
+
+/etc/systemd/system/ad-i3lock.service

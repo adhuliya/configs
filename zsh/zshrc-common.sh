@@ -2,14 +2,14 @@
 
 # MYDATA should be set in /etc/environment file.
 # It should contain a line like given below:
-#   MYDATA=/home/codeman/mydata
+#   MYDATA=/home/codeman/.itsoflife/mydata
 
-echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/myshell.log
+echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/mysystem.log
 
 ################################
 ## MOST IMPORTANT
 ################################
-export PATH="$MYDATA/local/bin:${MYDATA}/git/bin-git:${PATH}"
+# set PATH in ~/.profile only
 export CDPATH="${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
 export EDITOR="vim"
 export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
@@ -48,7 +48,11 @@ set -o vi
 #export HISTFILESIZE=-1
 #export HISTSIZE=-1
 
-alias tree='tree -L 2'
+alias tree='tree -la -L 2'
+alias treee='tree -la -L 3'
+alias treeee='tree -la -L 4'
+alias treeeee='tree -la -L 5'
+
 alias ll='ls -lF'
 alias lla='ls -alF'
 alias la='ls -a'
@@ -108,13 +112,17 @@ alias afs="apt-file search"
 
 alias timeit="/usr/bin/time"
 
-alias head1="head -n 1"
-alias head2="head -n 2"
-alias head3="head -n 3"
+alias head="head -n 1"
+alias headd="head -n 2"
+alias headdd="head -n 3"
+alias headddd="head -n 4"
+alias headdddd="head -n 5"
 
-alias tail1="tail -n 1"
-alias tail2="tail -n 2"
-alias tail3="tail -n 3"
+alias tail="tail -n 1"
+alias taill="tail -n 2"
+alias tailll="tail -n 3"
+alias taillll="tail -n 4"
+alias tailllll="tail -n 5"
 
 function shot {
   # invokes screenshot program `import`, giving it a filename.
@@ -238,6 +246,5 @@ export GOLIB=$MYDATA/git/ws/ws-misc-git/golang/pkg
 #export PATH=$GOROOT/bin:$PATH
 
 #END#########################
-
 
 
