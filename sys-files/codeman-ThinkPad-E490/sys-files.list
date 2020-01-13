@@ -19,3 +19,6 @@
 /home/codeman/.ideavimrc
 
 /etc/systemd/system/ad-i3lock.service
+
+/etc/nginx/sites-enabled/knotes
+

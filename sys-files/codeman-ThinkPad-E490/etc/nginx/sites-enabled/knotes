@@ -1,0 +1,21 @@
+server {
+  listen 5050 default_server;
+
+  root /home/codeman/.itsoflife;
+  
+  location /knotes-git {
+    autoindex off;
+    auth_basic "Administrator Login";
+    # must create the .htpasswd file using the command:
+    #     htpasswd -c /home/codeman/.itsoflife/knotes-git/.htpasswd username;
+    # install htpasswd using: sudo apt-get install apache2-utils
+    auth_basic_user_file /home/codeman/.itsoflife/knotes-git/.htpasswd;
+  }
+
+  location /mydata {
+    autoindex on;
+    auth_basic "Administrator Login";
+    auth_basic_user_file /home/codeman/.itsoflife/knotes-git/.htpasswd;
+  }
+}
+
