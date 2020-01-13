@@ -70,8 +70,8 @@ alias lti="links internet.iitb.ac.in"
 export NOTESTUB="\n\n\n------------------------------------------------\nNote Heading <a name=\"`date +%Y%m%d-%H%M%S`\"></a>\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> ${MYDATA}/../knotes-git/quick-notes.md; vi +/CommaSeparatedKeyword "${MYDATA}/../knotes-git/quick-notes.md"'
-alias rn='vi + "${MYDATA}/../knotes-git/quick-notes.md"'
+alias n='echo -e "$NOTESTUB" >> ${MYDATA}/../knotes-git/quick_notes.md; vi +/CommaSeparatedKeyword "${MYDATA}/../knotes-git/quick_notes.md"'
+alias rn='vi + "${MYDATA}/../knotes-git/quick_notes.md"'
 alias knotes="cd ${MYDATA}/../knotes-git; vi _knotes.md;"
 alias tasks="cd ${MYDATA}/../knotes-git; vi tasks.md;"
 
