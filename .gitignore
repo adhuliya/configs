@@ -16,7 +16,9 @@ not-for-git/
 *.bzip2
 *.tar
 
-a.out
+# in and out file (.in is custom)
+*.out
+*.in
 *.so
 *.a
 *.c.c
