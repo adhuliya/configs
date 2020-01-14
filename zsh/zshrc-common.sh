@@ -1,7 +1,8 @@
 # NOTE: Adapted from .bashrc
 
-# MYDATA should be set in /etc/environment file.
+# MYDATA and ITSOFLIFE should be set in /etc/environment file.
 # It should contain a line like given below:
+#   ITSOFLIFE=/home/codeman/.itsoflife
 #   MYDATA=/home/codeman/.itsoflife/mydata
 
 echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/mysystem.log
@@ -10,7 +11,7 @@ echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/mysystem.log
 ## MOST IMPORTANT
 ################################
 # set PATH in ~/.profile only
-export CDPATH="${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
+export CDPATH="${ITSOFLIFE}/:${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
 export EDITOR="vim"
 export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
 
