@@ -27,4 +27,6 @@
 /home/codeman/.config/openbox/lubuntu-rc.xml
 /home/codeman/.config/openbox/rc.xml
 
+#lxterminal config file
+/home/codeman/.config/lxterminal/lxterminal.conf
 
