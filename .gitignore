@@ -3,18 +3,29 @@
 # common ignores for all repos
 ################################
 *.log
-delit*
-delit/
+*.log.1
+*.log.2
+*.log.3
+*.log.4
+*.log.5
 logs/
+
+# temporaries
 *.swp
 *~
+
+# custom special purpose files/folders
+delit*
+delit/
 not-for-git/
 
+# archives
 *.tgz
 *.zip
 *.xz
 *.bzip2
 *.tar
+*.a
 
 # in and out file (.in is custom)
 *.out
@@ -25,8 +36,28 @@ not-for-git/
 *.plist
 build/
 
+# python related
 __pycache__/
 *.pyc
 *.pyo
+venv/
+
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+#*.pdf
+*.ps
+*.dvi
+*.fdb_latexmk
+*.synctex.gz
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+# BibTeX
+*.bbl
+*.blg
 ################################
 
