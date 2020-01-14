@@ -22,8 +22,9 @@
 /etc/udev/rules.d/10-trackpoint.rules
 /usr/share/X11/xorg.conf.d/70-synaptics.conf
 
-#keyboard shortcuts (lxhotkey/openbox)
-/home/codeman/.config/openbox/rc.xml
+#keyboard shortcuts (lxhotkey/openbox) (customizations are in lubuntu-rc.xml)
+#to apply the changes run: `openbox --reconfigure`
 /home/codeman/.config/openbox/lubuntu-rc.xml
+/home/codeman/.config/openbox/rc.xml
 
 

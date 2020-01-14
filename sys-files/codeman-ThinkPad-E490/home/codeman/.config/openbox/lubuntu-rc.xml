@@ -539,23 +539,9 @@
                 <command>lxterminal -e &quot;myshutdown.sh&quot;</command>
             </action>
         </keybind>
-        <keybind key='W-p'>
-            <action name='Execute'>
-                <command>lxsession-default quit</command>
-            </action>
-        </keybind>
         <keybind key='A-W-s'>
             <action name='Execute'>
                 <command>lxsession-default screenshot window</command>
-            </action>
-        </keybind>
-        <keybind key='W-period'>
-            <action name='UnmaximizeFull'/>
-            <action name='MoveResizeTo'>
-                <x>0</x>
-                <y>0</y>
-                <width>100%</width>
-                <height>50%</height>
             </action>
         </keybind>
     </keyboard>
