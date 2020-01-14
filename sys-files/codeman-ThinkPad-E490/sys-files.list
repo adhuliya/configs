@@ -2,6 +2,7 @@
 # any line starting with "/" is cosidered a path
 
 /etc/environment
+/etc/fstab
 
 /home/codeman/.profile
 

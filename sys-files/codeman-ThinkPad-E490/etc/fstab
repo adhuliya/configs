@@ -1,0 +1,23 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/nvme0n1p6 during installation
+UUID=981ebb76-bdbb-4a01-970e-5a9cf16a4eaf /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/nvme0n1p5 during installation
+UUID=13e31bed-a28d-4c16-aa91-143dfb9243c0 /boot           ext4    defaults        0       2
+# /boot/efi was on /dev/nvme0n1p1 during installation
+UUID=E262-70A6  /boot/efi       vfat    umask=0077      0       1
+# /home was on /dev/sda1 during installation
+UUID=b082dc57-51d6-48ea-8e0d-d3648dc7a741 /home           ext4    defaults        0       2
+# /home/codeman/.itsoflife/mydata/local was on /dev/sda2 during installation
+UUID=ef7a540b-def5-4297-a99a-51f1af936dbd /home/codeman/.itsoflife/mydata/local ext4    defaults        0       2
+# /home/codeman/.itsoflife/mydata/local/extra-partition was on /dev/sda3 during installation
+UUID=9defa8cf-a48b-4e81-857b-48e8857de95d /home/codeman/.itsoflife/mydata/local/extra-partition ext4    defaults        0       2
+# /home/codeman/.itsoflife/mydata/local/ssd was on /dev/nvme0n1p8 during installation
+UUID=5b2416ee-8367-47d7-823b-f85211de6794 /home/codeman/.itsoflife/mydata/local/ssd ext4    defaults        0       2
+# swap was on /dev/nvme0n1p7 during installation
+UUID=eea50fef-d96a-49c6-bf4d-778117cc4da1 none            swap    sw              0       0
