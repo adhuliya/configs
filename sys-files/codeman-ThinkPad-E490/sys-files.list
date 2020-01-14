@@ -14,8 +14,10 @@
 /home/codeman/.vim/ftplugin
 /home/codeman/.ideavimrc
 
+#my knotes nginx server (to password protect use: htpasswd)
 /etc/nginx/sites-enabled/knotes
 
+#ref:https://www.reddit.com/r/thinkpad/comments/5rcwlq/heres_how_to_get_the_perfect_trackpoint/
 /etc/udev/rules.d/10-trackpoint.rules
 /usr/share/X11/xorg.conf.d/70-synaptics.conf
 
