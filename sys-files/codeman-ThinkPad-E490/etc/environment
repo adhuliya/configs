@@ -1,4 +1,5 @@
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+MYDIRNAME=itsoflife
 ITSOFLIFE=/home/codeman/.itsoflife
 MYDATA=/home/codeman/.itsoflife/mydata
 MYMLOCATEDB=/home/codeman/.itsoflife/mydata/local/files/mlocate.db
