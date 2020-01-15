@@ -1,19 +1,20 @@
 # NOTE: Adapted from .bashrc
 
 # MYDATA and ITSOFLIFE should be set in /etc/environment file.
-# It should contain a line like given below:
-#   ITSOFLIFE=/home/codeman/.itsoflife
-#   MYDATA=/home/codeman/.itsoflife/mydata
 
-echo "$(date) zshrc-common.sh executing" >> ${MYDATA}/local/logs/mysystem.log
+_MYDATA=$MYDATA
+_ITSOFLIFE=$ITSOFLIFE
+_MYMLOCATEDB=$MYMLOCATEDB
+
+echo "$(date) zshrc-common.sh executing" >> ${_MYDATA}/local/logs/mysystem.log
 
 ################################
 ## MOST IMPORTANT
 ################################
 # set PATH in ~/.profile only
-export CDPATH="${ITSOFLIFE}/:${MYDATA}/:${MYDATA}/git:${MYDATA}/local:${MYDATA}/remote"
+export CDPATH="${ITSOFLIFE}/:${_MYDATA}/:${_MYDATA}/git:${_MYDATA}/local:${_MYDATA}/remote"
 export EDITOR="vim"
-export PYTHONPATH="${MYDATA}/git/ws/ws-misc-git/python/mylib"
+export PYTHONPATH="${_MYDATA}/git/ws/ws-misc-git/python/mylib"
 
 #END############################
 
@@ -66,15 +67,15 @@ alias .....="cd ../../../.."
 # link to internet (lti)
 alias lti="links internet.iitb.ac.in"
 
-#alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> ${MYDATA}/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "${MYDATA}/mynotes-git/record48-`uname -n`.txt"'
+#alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> ${_MYDATA}/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "${_MYDATA}/mynotes-git/record48-`uname -n`.txt"'
 
 export NOTESTUB="\n\n\n------------------------------------------------\n<a name=\"`date +%Y%m%d-%H%M%S`\"></a>\nNote Heading\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> ${MYDATA}/../knotes-git/quick_notes.md; vi +/CommaSeparatedKeyword "${MYDATA}/../knotes-git/quick_notes.md"'
-alias rn='vi + "${MYDATA}/../knotes-git/quick_notes.md"'
-alias knotes="cd ${MYDATA}/../knotes-git; vi _knotes.md;"
-alias tasks="cd ${MYDATA}/../knotes-git; vi tasks.md;"
+alias n='echo -e "$NOTESTUB" >> ${_MYDATA}/../knotes-git/quick_notes.md; vi +/CommaSeparatedKeyword "${_MYDATA}/../knotes-git/quick_notes.md"'
+alias rn='vi + "${_MYDATA}/../knotes-git/quick_notes.md"'
+alias knotes="cd ${_MYDATA}/../knotes-git; vi _knotes.md;"
+alias tasks="cd ${_MYDATA}/../knotes-git; vi tasks.md;"
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> README.md; vi +/CommaSeparatedKeyword "README.md"'
@@ -96,7 +97,7 @@ alias py="python3 -q"
 alias ipy="ipython3"
 alias py3="python3 -q"
 alias ipy3="ipython3"
-export PYTHONSTARTUP=$MYDATA/git/configs-git/python3/python3-startup.py
+export PYTHONSTARTUP=$_MYDATA/git/configs-git/python3/python3-startup.py
 export PY="import re;import os.path as osp;import os;import sys;\
 pl=lambda lst, func=lambda x: x, end=os.linesep: [print(func(item),end=end) for item in lst];"
 ################
@@ -125,20 +126,23 @@ alias tailll="tail -n 3"
 alias taillll="tail -n 4"
 alias tailllll="tail -n 5"
 
+alias myupdatedb="updatedb -l 0 -o $_MYMLOCATEDB";
+alias mylocate="locate -d $_MYMLOCATEDB -r";
+
 function mysource {
   # accepts name of the source file and sources it from the fixed location
   # Use: to setup complicated environments quickly
   if [[ -z $1 ]]; then
     # list the source scripts without the argument
-    ls $MYDATA/git/configs-git/sourceit;
+    ls $_MYDATA/git/configs-git/sourceit;
   else
-    source $MYDATA/git/configs-git/sourceit/$1;
+    source $_MYDATA/git/configs-git/sourceit/$1;
   fi
 }
 
 function shot {
   # invokes screenshot program `import`, giving it a filename.
-  import $MYDATA/local/home/Pictures/$(mktemp -u "`date +"%Y%m%d-%H%M%S"`-XXXXXXXX.png")
+  import $_MYDATA/local/home/Pictures/$(mktemp -u "`date +"%Y%m%d-%H%M%S"`-XXXXXXXX.png")
 }
 
 function o {
@@ -251,10 +255,10 @@ alias mdv=vmd
 ## GOLANG golang setup
 #############################
 
-export GOPATH=$MYDATA/git/ws/ws-misc-git/golang
-export GOBIN=$MYDATA/git/ws/ws-misc-git/golang/bin
-export GOLIB=$MYDATA/git/ws/ws-misc-git/golang/pkg
-#export GOROOT=$MYDATA/local/packages-live/go
+export GOPATH=$_MYDATA/git/ws/ws-misc-git/golang
+export GOBIN=$_MYDATA/git/ws/ws-misc-git/golang/bin
+export GOLIB=$_MYDATA/git/ws/ws-misc-git/golang/pkg
+#export GOROOT=$_MYDATA/local/packages-live/go
 #export PATH=$GOROOT/bin:$PATH
 
 #END#########################
