@@ -125,6 +125,17 @@ alias tailll="tail -n 3"
 alias taillll="tail -n 4"
 alias tailllll="tail -n 5"
 
+function mysource {
+  # accepts name of the source file and sources it from the fixed location
+  # Use: to setup complicated environments quickly
+  if [[ -z $1 ]]; then
+    # list the source scripts without the argument
+    ls $MYDATA/git/configs-git/sourceit;
+  else
+    source $MYDATA/git/configs-git/sourceit/$1;
+  fi
+}
+
 function shot {
   # invokes screenshot program `import`, giving it a filename.
   import $MYDATA/local/home/Pictures/$(mktemp -u "`date +"%Y%m%d-%H%M%S"`-XXXXXXXX.png")
