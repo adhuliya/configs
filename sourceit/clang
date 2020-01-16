@@ -1,3 +1,8 @@
 # source this file
 
-export PATH="/home/codeman/.itsoflife/mydata/local/packages-live/llvm-clang9.0.0/build/bin:$PATH"
+NEW_CLANG=/home/codeman/.itsoflife/mydata/local/packages-live/llvm-clang9.0.0/build/bin
+
+export PATH="$NEW_CLANG:$PATH"
+
+echo "Added clang to path";
+echo "PATH=$PATH";
