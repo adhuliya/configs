@@ -544,6 +544,9 @@
                 <command>lxsession-default screenshot window</command>
             </action>
         </keybind>
+        <keybind key='W-b'>
+            <action name='FocusToBottom'/>
+        </keybind>
     </keyboard>
     <mouse>
         <!--       Lubuntu specific : Specific mouse settings 
