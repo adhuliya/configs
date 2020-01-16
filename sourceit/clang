@@ -1,0 +1,3 @@
+# source this file
+
+export PATH="/home/codeman/.itsoflife/mydata/local/packages-live/llvm-clang9.0.0/build/bin:$PATH"
