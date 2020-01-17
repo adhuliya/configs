@@ -1,0 +1,8 @@
+# source this bash script
+
+AJIT_CLANG=/home/codeman/.itsoflife/mydata/local/packages-live/llvm-clang9.0.0/build-ajit/bin
+
+export PATH="$AJIT_CLANG:$PATH"
+
+echo "Added AJIT to path";
+echo "PATH=$PATH";

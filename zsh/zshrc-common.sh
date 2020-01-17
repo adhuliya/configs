@@ -129,6 +129,9 @@ alias tailllll="tail -n 5"
 alias myupdatedb="updatedb -l 0 -o $_MYMLOCATEDB";
 alias mylocate="locate -d $_MYMLOCATEDB -r";
 
+# take notes on ajit/sparc/llvm
+alias ajitnote="cd $ITSOFLIFE/knotes-git/sparc; vi sparc.md;"
+
 function mysource {
   # accepts name of the source file and sources it from the fixed location
   # Use: to setup complicated environments quickly
