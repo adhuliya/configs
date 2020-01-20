@@ -174,6 +174,23 @@ function psgk {
 
 #END############################
 
+################################
+## record my desktop
+## sudo apt-get install recordmydesktop gtk-recordmydesktop
+################################
+
+# record a window: invoke the command and click on the window to be recorded
+# click on the desktop to record the full desktop: --workdir $MYDATA/local/tmp 
+function rmd {
+  recordmydesktop --channels 2 --fps 20 --no-sound -workdir $MYDATA/local/tmp --windowid $(xwininfo | awk '/Window id:/ {print $4}')
+}
+
+# in addition to rmd follow mouse
+function rmdfm {
+  recordmydesktop --channels 2 --fps 20 --no-sound --follow-mouse --windowid $(xwininfo | awk '/Window id:/ {print $4}')
+}
+
+################################
 
 ################################
 ## Git related
