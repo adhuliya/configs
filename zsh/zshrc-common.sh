@@ -187,7 +187,8 @@ function rmd {
 
 # in addition to rmd follow mouse
 function rmdfm {
-  recordmydesktop --channels 2 --fps 20 --no-sound --follow-mouse --windowid $(xwininfo | awk '/Window id:/ {print $4}')
+  #recordmydesktop --channels 2 --fps 20 --no-sound --follow-mouse --windowid $(xwininfo | awk '/Window id:/ {print $4}')
+  recordmydesktop --fps 20 --no-sound --follow-mouse --windowid $(xwininfo | awk '/Window id:/ {print $4}')
 }
 
 ################################
