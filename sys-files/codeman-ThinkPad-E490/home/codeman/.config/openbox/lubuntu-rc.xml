@@ -547,6 +547,11 @@
         <keybind key='W-b'>
             <action name='FocusToBottom'/>
         </keybind>
+        <keybind key='W-v'>
+            <action name='Execute'>
+                <command>myxsel</command>
+            </action>
+        </keybind>
     </keyboard>
     <mouse>
         <!--       Lubuntu specific : Specific mouse settings 

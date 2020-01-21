@@ -67,18 +67,17 @@ alias .....="cd ../../../.."
 # link to internet (lti)
 alias lti="links internet.iitb.ac.in"
 
-#alias n='echo -e "\n\n\n\n0000000\n!`date`\n@`date +%d%b%Y.%H%M%S`\n# CommaSeparatedKeywords\n\n\n0000000" >> ${_MYDATA}/mynotes-git/record48-`uname -n`.txt; vi +/CommaSeparatedKeywords "${_MYDATA}/mynotes-git/record48-`uname -n`.txt"'
-
-export NOTESTUB="\n\n\n------------------------------------------------\n<a name=\"`date +%Y%m%d-%H%M%S`\"></a>\nNote Heading\n================================================\n* Keywords: CommaSeparatedKeyword1, CommaSeparatedKeyword2\n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\n------------------------------------------------\n\n\n\n------------------------------------------------\n\n"
+export NOTESTUB="\n\n\n------------------------------------------------\n<a name=\"`date +%Y%m%d-%H%M%S`\"></a>\nNote Heading\n================================================\n* Keywords: \n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\nthe_content_\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> ${_MYDATA}/../knotes-git/quick_notes.md; vi +/CommaSeparatedKeyword "${_MYDATA}/../knotes-git/quick_notes.md"'
+alias n='echo -e "$NOTESTUB" >> ${_MYDATA}/../knotes-git/quick_notes.md; vi +/the_content_ "${_MYDATA}/../knotes-git/quick_notes.md"'
 alias rn='vi + "${_MYDATA}/../knotes-git/quick_notes.md"'
 alias knotes="cd ${_MYDATA}/../knotes-git; vi _knotes.md;"
 alias tasks="cd ${_MYDATA}/../knotes-git; vi tasks.md;"
+alias myclip="cd ${_MYDATA}/../knotes-git; vi clipboard.txt;"
 
 # local notes
-alias nl='echo -e "$NOTESTUB" >> README.md; vi +/CommaSeparatedKeyword "README.md"'
+alias nl='echo -e "$NOTESTUB" >> README.md; vi +/the_content_ "README.md"'
 alias rnl='vi + "README.md"'
 
 alias s=sudo
