@@ -270,17 +270,4 @@ alias mdv=vmd
 
 #END#########################
 
-
-#############################
-## GOLANG golang setup
-#############################
-
-export GOPATH=$_MYDATA/git/ws/ws-misc-git/golang
-export GOBIN=$_MYDATA/git/ws/ws-misc-git/golang/bin
-export GOLIB=$_MYDATA/git/ws/ws-misc-git/golang/pkg
-#export GOROOT=$_MYDATA/local/packages-live/go
-#export PATH=$GOROOT/bin:$PATH
-
-#END#########################
-
-
+autoload zmv
