@@ -30,3 +30,6 @@
 #lxterminal config file
 /home/codeman/.config/lxterminal/lxterminal.conf
 
+#lxde autostart folder
+/home/codeman/.config/autostart
+
