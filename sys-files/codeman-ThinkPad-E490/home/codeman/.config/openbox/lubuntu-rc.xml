@@ -552,6 +552,11 @@
                 <command>myxsel</command>
             </action>
         </keybind>
+        <keybind key='A-W-x'>
+            <action name='Execute'>
+                <command>lxterminal -e jot.sh</command>
+            </action>
+        </keybind>
     </keyboard>
     <mouse>
         <!--       Lubuntu specific : Specific mouse settings 
