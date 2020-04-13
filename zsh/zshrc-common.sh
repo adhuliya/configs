@@ -59,7 +59,6 @@ alias ll='ls -lF'
 alias lla='ls -alF'
 alias la='ls -a'
 alias l='ls -CF'
-alias c="cd"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
