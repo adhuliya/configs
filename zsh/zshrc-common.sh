@@ -69,11 +69,11 @@ alias lti="links internet.iitb.ac.in"
 export NOTESTUB="\n\n\n------------------------------------------------\n<a name=\"`date +%Y%m%d-%H%M%S`\"></a>\nNote Heading\n================================================\n* Keywords: \n* Timestamp: `date +%Y%m%d-%H%M%S`\n\n------------------------------------------------\nthe_content_\n\n\n\n------------------------------------------------\n\n"
 
 # global notes
-alias n='echo -e "$NOTESTUB" >> ${_MYDATA}/../knotes-git/quick_notes.md; vi +/the_content_ "${_MYDATA}/../knotes-git/quick_notes.md"'
-alias rn='vi + "${_MYDATA}/../knotes-git/quick_notes.md"'
-alias knotes="cd ${_MYDATA}/../knotes-git; vi _knotes.md;"
-alias tasks="cd ${_MYDATA}/../knotes-git; vi tasks.md;"
-alias myclip="cd ${_MYDATA}/../knotes-git; vi clipboard.txt;"
+alias n='echo -e "$NOTESTUB" >> ${_MYDATA}/../knots-git/quick_notes.md; vi +/the_content_ "${_MYDATA}/../knots-git/quick_notes.md"'
+alias rn='vi + "${_MYDATA}/../knots-git/quick_notes.md"'
+alias knots="cd ${_MYDATA}/../knots-git; vi _knots.md;"
+alias tasks="cd ${_MYDATA}/../knots-git; vi tasks.md;"
+alias myclip="cd ${_MYDATA}/../knots-git; vi clipboard.txt;"
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> README.md; vi +/the_content_ "README.md"'
@@ -128,7 +128,7 @@ alias myupdatedb="updatedb -l 0 -o $_MYMLOCATEDB";
 alias mylocate="locate -d $_MYMLOCATEDB -r";
 
 # take notes on ajit/sparc/llvm
-alias ajitnote="cd $ITSOFLIFE/knotes-git/sparc; vi sparc.md;"
+alias ajitnote="cd $ITSOFLIFE/knots-git/sparc; vi sparc.md;"
 
 function mysource {
   # accepts name of the source file and sources it from the fixed location
