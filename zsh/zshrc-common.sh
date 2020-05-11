@@ -95,7 +95,7 @@ alias py="python3 -q"
 alias ipy="ipython3"
 alias py3="python3 -q"
 alias ipy3="ipython3"
-export PYTHONSTARTUP=$_MYDATA/git/configs-git/python3/python3-startup.py
+#export PYTHONSTARTUP=$_MYDATA/git/configs-git/python3/python3-startup.py
 export PY="import re;import os.path as osp;import os;import sys;\
 pl=lambda lst, func=lambda x: x, end=os.linesep: [print(func(item),end=end) for item in lst];"
 ################
