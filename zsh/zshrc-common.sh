@@ -103,6 +103,8 @@ pl=lambda lst, func=lambda x: x, end=os.linesep: [print(func(item),end=end) for 
 alias v=vim
 alias r="vim -R"
 
+alias blx="b lxterminal"
+
 alias ac="apt-cache"
 alias acs="apt-cache search"
 alias sag="sudo apt-get"
