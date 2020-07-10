@@ -135,12 +135,13 @@ set listchars=tab:>~,nbsp:_,trail:.
 " copy text to system clipboard
 :vnoremap y "+y
 
-" append line to buffer y
+" copy/append line to buffer y
 :nnoremap Y "Yyy
-" append selection to buffer y
+" copy/append selection to buffer y
 :vnoremap Y "Yy
 " paste line from buffer y
 :nnoremap YY "yp
+:nnoremap Yp "yp
 " clear the buffer y
 :nnoremap Yc qyq
 
