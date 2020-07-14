@@ -101,3 +101,9 @@ source $ZSH/oh-my-zsh.sh
 
 source $MYDATA/git/configs-git/zsh/zshrc-user.sh
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/path.zsh.inc' ]; then . '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/completion.zsh.inc'; fi
