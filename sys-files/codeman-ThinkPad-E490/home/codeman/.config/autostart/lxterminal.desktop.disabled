@@ -1,0 +1,14 @@
+[Desktop Entry] 
+
+Type=Application
+
+# A comment which can/will be used as a tooltip
+Comment=Startup terminal
+
+Exec=lxterminal
+
+# Describes whether this application needs to be run in a terminal or not (true/false)
+Terminal=false
+
+# The name of the icon that will be used to display this entry
+#Icon=jmemorize
