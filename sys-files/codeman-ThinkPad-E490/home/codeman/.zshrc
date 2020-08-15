@@ -107,3 +107,6 @@ if [ -f '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/pa
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/codeman/.itsoflife/mydata/local/packages-live/google-cloud-sdk/completion.zsh.inc'; fi
+
+# OPAM configuration
+. /home/codeman/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

@@ -6,5 +6,7 @@ export PATH=$ANDROID_SDK_ROOT/emulator:$PATH
 export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH
 export PATH=$MYDATA/local/packages-live/flutter/flutter/bin:$PATH
 export PATH=/usr/lib/jvm/jdk-14.0.2/bin:$PATH
+export PATH=/home/codeman/.opam/system/bin:$PATH
+
 
 
