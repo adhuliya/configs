@@ -2,3 +2,4 @@
 
 :nnoremap <f5> :!make show<cr>
 :nnoremap <f9> :!make<cr>
+:setl noai nocin nosi<cr>

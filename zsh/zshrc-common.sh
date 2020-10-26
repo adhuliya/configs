@@ -128,6 +128,7 @@ alias tailllll="tail -n 5"
 
 alias myupdatedb="updatedb -l 0 -o $_MYMLOCATEDB";
 alias mylocate="locate -d $_MYMLOCATEDB -r";
+alias mycp="rsync -avz --partial --progress -e ssh"
 
 # take notes on ajit/sparc/llvm
 alias ajitnote="cd $ITSOFLIFE/knots-git/sparc; vi sparc.md;"
@@ -145,7 +146,7 @@ function mysource {
 
 function shot {
   # invokes screenshot program `import`, giving it a filename.
-  import $_MYDATA/local/home/Pictures/$(mktemp -u "`date +"%Y%m%d-%H%M%S"`-XXXXXXXX.png")
+  import $HOME/$(mktemp -u "`date +"%Y%m%d_%H%M%S"`_XXX.png")
 }
 
 function o {

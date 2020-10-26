@@ -431,7 +431,7 @@
         </keybind>
         <!--       Take a screenshot of the current window with scrot when Alt+Print are pressed 
   -->
-        <keybind key='Print'>
+        <keybind key='W-s'>
             <action name='Execute'>
                 <command>lxsession-default screenshot</command>
             </action>
@@ -504,24 +504,9 @@
         <keybind key='S-W-q'>
             <action name='Close'/>
         </keybind>
-        <keybind key='W-s'>
-            <action name='Execute'>
-                <command>lxsession-default screenshot</command>
-            </action>
-        </keybind>
-        <keybind key='S-W-s'>
-            <action name='Execute'>
-                <command>lxsession-default screenshot window</command>
-            </action>
-        </keybind>
         <keybind key='W-q'>
             <action name='Execute'>
                 <command>lxterminal -e &quot;myshutdown.sh&quot;</command>
-            </action>
-        </keybind>
-        <keybind key='A-W-s'>
-            <action name='Execute'>
-                <command>lxsession-default screenshot window</command>
             </action>
         </keybind>
         <keybind key='W-b'>
@@ -555,6 +540,11 @@
         <keybind key='W-c'>
             <action name='Execute'>
                 <command>lxterminal -e &quot;ipython3 --quick --no-banner&quot;</command>
+            </action>
+        </keybind>
+        <keybind key='S-W-s'>
+            <action name='Execute'>
+                <command>myscreenshot</command>
             </action>
         </keybind>
     </keyboard>

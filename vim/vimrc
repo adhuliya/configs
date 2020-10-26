@@ -101,7 +101,7 @@ nnoremap  :call NumberToggle()<cr>
 set nrformats+=alpha
 
 set ai
-"expand tab to spaces: 
+"expand tab to spaces:
 "use :retab to change any previous tabs to spaces
 "use :set list to see any tabs in the file as ^I
 set tabstop=2
@@ -117,7 +117,7 @@ highlight ColorColumn ctermbg=darkgray
 set wrap  " although the default
 set linebreak
 set breakindent  " displays proper indent
-set showbreak=>>>\ 
+set showbreak=>>>\
 
 
 " wraps line at around column 79, at word boundaries.
@@ -161,7 +161,7 @@ set clipboard=unnamed
 :inoremap KJ <esc>
 
 " disable esc key to use jk instead
-" :inoremap <esc> <nop> 
+" :inoremap <esc> <nop>
 
 " edit .vimrc file
 :nnoremap <leader>ev :split $MYVIMRC<cr>
@@ -209,9 +209,10 @@ set clipboard=unnamed
 " normal file related shortcuts
 :nnoremap <f2> <esc>:w<cr>
 :nnoremap <f4> <esc>:q<cr>
-:nnoremap <f1> <esc>:help 
+:nnoremap <f1> <esc>:help
 :nnoremap <f3> <esc>:NERDTreeToggle<cr>
-:nnoremap <f12> <esc>:TagbarToggle<cr>
+" :nnoremap <f12> <esc>:TagbarToggle<cr>
+:nnoremap <f12> <esc>:setl noai nocin nosi<cr>
 
 " navigate between split windows
 :nnoremap <c-h> <c-w>h
