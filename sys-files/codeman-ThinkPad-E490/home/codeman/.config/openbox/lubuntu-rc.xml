@@ -385,12 +385,6 @@
                 <command>lxsession-default tasks</command>
             </action>
         </keybind>
-        <!-- Launch a terminal on Ctrl + Alt + T -->
-        <keybind key='W-x'>
-            <action name='Execute'>
-                <command>lxsession-default terminal</command>
-            </action>
-        </keybind>
         <!-- Launch a filemanager on Ctrl + Alt + D -->
         <keybind key='C-A-D'>
             <action name='Execute'>
@@ -545,6 +539,11 @@
         <keybind key='S-W-s'>
             <action name='Execute'>
                 <command>myscreenshot</command>
+            </action>
+        </keybind>
+        <keybind key='W-x'>
+            <action name='Execute'>
+                <command>lxterminal</command>
             </action>
         </keybind>
     </keyboard>
