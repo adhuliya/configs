@@ -15,8 +15,8 @@
 /home/codeman/.vim/ftplugin
 /home/codeman/.ideavimrc
 
-#my knotes nginx server (to password protect use: htpasswd)
-/etc/nginx/sites-enabled/knotes
+##my knotes nginx server (to password protect use: htpasswd)
+#/etc/nginx/sites-enabled/knotes
 
 #ref:https://www.reddit.com/r/thinkpad/comments/5rcwlq/heres_how_to_get_the_perfect_trackpoint/
 /etc/udev/rules.d/10-trackpoint.rules
@@ -30,6 +30,20 @@
 #lxterminal config file
 /home/codeman/.config/lxterminal/lxterminal.conf
 
-#lxde autostart folder
+################################################################################
+# BLOCK START: lxqt related
+################################################################################
+# sddm sources ~/.xsessionrc instead of ~/.profile
+/home/codeman/.xsessionrc
+
+# all lxqt configurations
+/home/codeman/.config/lxqt
+
+#lxqt autostart folder
 /home/codeman/.config/autostart
+
+################################################################################
+# BLOCK END  : lxqt related
+################################################################################
+
 

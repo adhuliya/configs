@@ -1,5 +1,5 @@
+# this file is sourced by sddm display manager instead of `~/.profile`
 # https://help.ubuntu.com/community/EnvironmentVariables#Session-wide_environment_variables
-# sddm in lxqt sources `~/.xsessionrc` file instead of this.
 export ANDROID_SDK_ROOT=/home/codeman/Android/Sdk
 export ANDROID_HOME=/home/codeman/Android/Sdk
 export PATH=/home/codeman/.local/bin:$PATH

@@ -543,7 +543,7 @@
         </keybind>
         <keybind key='W-x'>
             <action name='Execute'>
-                <command>lxterminal</command>
+                <command>qterminal</command>
             </action>
         </keybind>
     </keyboard>

@@ -71,9 +71,9 @@ export NOTESTUB="\n\n\n------------------------------------------------\n<a name
 # global notes
 alias n='echo -e "$NOTESTUB" >> ${_MYDATA}/../knots-git/quick_notes.md; vi +/the_content_ "${_MYDATA}/../knots-git/quick_notes.md"'
 alias rn='vi + "${_MYDATA}/../knots-git/quick_notes.md"'
-alias knots="cd ${_MYDATA}/../knots-git; vi _knots.md;"
+alias knots="cd ${_MYDATA}/../knots-git; vi knots.md;"
 alias tasks="cd ${_MYDATA}/../knots-git; vi tasks.md;"
-alias myclip="cd ${_MYDATA}/../knots-git; vi clipboard.txt;"
+alias c="cd ${_MYDATA}/../knots-git; vi + clipboard.txt;"
 
 # local notes
 alias nl='echo -e "$NOTESTUB" >> README.md; vi +/the_content_ "README.md"'

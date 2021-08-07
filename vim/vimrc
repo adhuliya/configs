@@ -27,6 +27,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'vim-airline/vim-airline'
 Plugin 'chrisbra/Colorizer'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 " Always show statusline
 set laststatus=2
