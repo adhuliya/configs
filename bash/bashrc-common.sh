@@ -1,3 +1,5 @@
+# This is a test edit directly from github.com
+
 echo "$(date) bashrc-common.sh executing" >> ${MYDATA}/local/mybash.log
 
 ################################
