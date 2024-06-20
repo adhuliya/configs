@@ -1,10 +1,12 @@
 # REF: https://ianyepan.github.io/posts/moving-away-from-ohmyzsh/
+# REF: https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
 
-PROMPT='%F{33}i%f%F{39}a%f%F{38}n%f%F{44}pan%f%F{50}@%f%F{43}ar%f%F{44}ch%f%F{38}:%1~/%f %F{44}%#%f '
+NEWLINE=$'\n';
+PROMPT="[%D %* history: %! tty: %y jobs: %j status: $?] ${NEWLINE}%n@%m %3~ %# ";
 
-HISTSIZE=500000
+HISTSIZE=1000000
 HISTFILE=~/.zsh_history
-SAVEHIST=500000
+SAVEHIST=1000000
 HISTDUP=erase
 setopt appendhistory
 setopt sharehistory
@@ -15,10 +17,25 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 shopt -s histverify
 
-autoload -U compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+setopt autocd
+
+# Complete partial command and file name searches.
+zstyle ':completion:&' completer _complete
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+autoload -Uz compinit && compinit
 
 # vim bindinds (use -e for emacs)
 bindkey -v 
 
+# Edit command line in Vim.
+autoload edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
 
+# Move, copy, symlink files by making names with patterns.
+# REF: https://unix.stackexchange.com/a/19291
+autoload zmv
+alias zmv='noglob zmv'
+alias zcp='noglob zmv -C'
+alias zln='noglob zmv -L'
+alias zsy='noglob zmv -Ls'
