@@ -2,7 +2,7 @@
 # REF: https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
 
 NEWLINE=$'\n';
-PROMPT="[%D %* history: %! tty: %y jobs: %j status: $?] ${NEWLINE}%n@%m %3~ %# ";
+PROMPT="${NEWLINE}[%D %* history: %! tty: %y jobs: %j status: %?] ${NEWLINE}%n@%m %3~ %# ";
 
 HISTSIZE=1000000
 HISTFILE=~/.zsh_history
